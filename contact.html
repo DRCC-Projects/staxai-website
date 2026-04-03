@@ -5,292 +5,112 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact StaxAI | Book a Discussion</title>
 <meta name="description" content="Get in touch with StaxAI — book a discussion about AI consulting, AI development, data labeling, automation, or audit AI for your business.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://staxai.in/contact">
-<meta property="og:title" content="Contact StaxAI | Book a Discussion">
-<meta property="og:description" content="Book a focused discussion with StaxAI about AI consulting, development, data labeling, automation, or audit AI for your business.">
-<meta property="og:url" content="https://staxai.in/contact">
-<meta property="og:site_name" content="StaxAI">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg:      #070A12;
-  --bg1:     #0C1020;
-  --bgc:     #0F1422;
-  --bgch:    #141929;
-  --border:  rgba(91,126,255,.10);
-  --borderh: rgba(91,126,255,.28);
-  --blue:    #5B7EFF;
-  --bluelt:  #7B9AFF;
-  --bluedim: rgba(91,126,255,.10);
-  --cyan:    #22D3EE;
-  --t1: #EDF0FA;
-  --t2: #8B93B0;
-  --t3: #3E4565;
-  --r:  6px;
-  --rlg:14px;
-  --ease:cubic-bezier(.4,0,.2,1);
-  --tr:.26s cubic-bezier(.4,0,.2,1);
-}
+:root{--bg:#070A12;--bg1:#0C1020;--bgc:#0F1422;--border:rgba(91,126,255,.12);--blue:#5B7EFF;--bluelt:#7B9AFF;--cyan:#22D3EE;--t1:#EDF0FA;--t2:#8B93B0;--t3:#3E4565;--r:6px;--tr:.26s cubic-bezier(.4,0,.2,1)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);color:var(--t1);
-  font-family:'Inter',sans-serif;font-weight:300;
-  line-height:1.7;overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-  min-height:100vh;
-}
+body{background:var(--bg);color:var(--t1);font-family:'Inter',sans-serif;font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;min-height:100vh}
 a{text-decoration:none;color:inherit}
-h1,h2,h3{font-family:'Syne',sans-serif;letter-spacing:-.025em;line-height:1.13}
-h1{font-size:clamp(2rem,4vw,3.2rem);font-weight:700}
-h2{font-size:clamp(1.3rem,2.4vw,1.8rem);font-weight:600}
-h3{font-size:1rem;font-weight:600}
-p{color:var(--t2);font-weight:300;line-height:1.85}
-
-.mono{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase}
-.wrap{max-width:1100px;margin:0 auto;padding:0 clamp(1.5rem,5vw,4rem)}
-
-/* ── NAV ── */
-nav{
-  position:sticky;top:0;z-index:100;
-  background:rgba(7,10,18,.92);
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border);
-  padding:.9rem 0;
-}
+h1,h2{font-family:'Syne',sans-serif;letter-spacing:-.025em;line-height:1.13}
+h1{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700}
+h2{font-size:clamp(1.3rem,2.2vw,1.7rem);font-weight:600}
+nav{background:rgba(7,10,18,.95);border-bottom:1px solid var(--border);padding:.9rem 0}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;padding:0 clamp(1.5rem,5vw,4rem)}
 .brand{font-family:'Syne',sans-serif;font-size:1.35rem;font-weight:700;color:var(--t1);letter-spacing:-.02em}
 .brand em{font-style:normal;color:var(--blue)}
-.nav-back{font-size:.78rem;color:var(--t2);transition:color var(--tr);display:flex;align-items:center;gap:6px}
+.nav-back{font-size:.78rem;color:var(--t2);transition:color var(--tr)}
 .nav-back:hover{color:var(--t1)}
-
-/* ── PAGE LAYOUT ── */
-.page{display:grid;grid-template-columns:1fr 1.35fr;gap:0;min-height:calc(100vh - 58px)}
-
-/* ── LEFT PANEL ── */
-.left-panel{
-  background:var(--bg1);
-  border-right:1px solid var(--border);
-  padding:clamp(3rem,6vw,5rem) clamp(2rem,4vw,4rem);
-  display:flex;flex-direction:column;justify-content:space-between;
-}
-.left-top{}
-.label-tag{display:inline-flex;align-items:center;gap:8px;color:var(--blue);margin-bottom:1.2rem}
-.label-tag::before{content:'';width:14px;height:1px;background:var(--blue)}
-.left-panel h1{color:var(--t1);margin-bottom:1.2rem}
-.left-panel .lead{font-size:clamp(.9rem,1.5vw,1rem);color:var(--t2);line-height:1.88;margin-bottom:2.5rem}
-
-/* Info rows */
-.info-rows{display:flex;flex-direction:column;gap:1.2rem;margin-bottom:2.5rem}
-.info-row{display:flex;align-items:flex-start;gap:.95rem}
-.info-ico{
-  width:36px;height:36px;border-radius:8px;
-  background:var(--bluedim);border:1px solid rgba(91,126,255,.18);
-  display:flex;align-items:center;justify-content:center;
-  font-size:.95rem;flex-shrink:0;
-}
-.info-body{}
-.info-label{font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:.2rem}
-.info-val{font-size:.85rem;color:var(--t2);font-weight:300}
-.info-val a{color:var(--t2);transition:color var(--tr)}
+.page{display:grid;grid-template-columns:1fr 1.3fr;min-height:calc(100vh - 58px)}
+.left{background:var(--bg1);border-right:1px solid var(--border);padding:clamp(2.5rem,5vw,4.5rem) clamp(2rem,4vw,3.5rem);display:flex;flex-direction:column;gap:2rem}
+.badge{display:inline-flex;align-items:center;gap:7px;color:var(--blue);font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase}
+.badge::before{content:'—';color:var(--t3)}
+.left h1{color:var(--t1)}
+.left-lead{font-size:.94rem;color:var(--t2);line-height:1.88;font-weight:300;max-width:400px}
+.info-rows{display:flex;flex-direction:column;gap:1.1rem}
+.info-row{display:flex;align-items:flex-start;gap:.85rem}
+.info-ico{width:36px;height:36px;border-radius:8px;background:rgba(91,126,255,.08);border:1px solid rgba(91,126,255,.18);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0}
+.info-label{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:.2rem}
+.info-val{font-size:.84rem;color:var(--t2);font-weight:300}
+.info-val a{color:var(--t2)}
 .info-val a:hover{color:var(--blue)}
-
-/* What to expect */
-.expect-title{font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:.85rem}
-.expect-list{list-style:none;display:flex;flex-direction:column;gap:.55rem}
-.expect-list li{font-size:.82rem;color:var(--t2);display:flex;align-items:flex-start;gap:8px;line-height:1.55;font-weight:300}
-.expect-list li::before{content:'→';color:var(--blue);font-family:'JetBrains Mono',monospace;font-size:.7rem;flex-shrink:0;margin-top:.1em}
-
-/* ── RIGHT PANEL / FORM ── */
-.right-panel{
-  padding:clamp(3rem,6vw,5rem) clamp(2rem,4vw,4rem);
-  display:flex;flex-direction:column;justify-content:center;
-}
-
-/* Success state */
-.form-success{
-  display:none;
-  text-align:center;
-  padding:3rem 2rem;
-}
-.form-success.show{display:block}
-.success-ico{font-size:3rem;margin-bottom:1.2rem;display:block}
-.form-success h2{color:var(--t1);margin-bottom:.8rem}
-.form-success p{font-size:.9rem;color:var(--t2);max-width:380px;margin:0 auto 1.8rem}
-.form-wrap.hide{display:none}
-
-/* Form heading */
-.form-heading{margin-bottom:2rem}
-.form-heading h2{color:var(--t1);margin-bottom:.4rem}
-.form-heading p{font-size:.85rem;color:var(--t3)}
-
-/* Form fields */
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.form-group{display:flex;flex-direction:column;gap:.45rem}
-.form-group.full{grid-column:1/-1}
-
-label{
-  font-family:'JetBrains Mono',monospace;
-  font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--t3);
-}
+.expect-label{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:.75rem}
+.expect-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.expect-list li{font-size:.8rem;color:var(--t2);display:flex;gap:8px;line-height:1.55;font-weight:300}
+.expect-list li::before{content:'→';color:var(--blue);font-size:.7rem;flex-shrink:0;margin-top:.1em}
+.right{padding:clamp(2.5rem,5vw,4.5rem) clamp(2rem,4vw,3.5rem);display:flex;flex-direction:column;justify-content:center}
+#successMsg{display:none;text-align:center;padding:3rem 1rem}
+#successMsg h2{color:var(--t1);margin-bottom:.8rem}
+#successMsg p{font-size:.9rem;color:var(--t2);margin-bottom:1.8rem}
+.back-btn{display:inline-flex;align-items:center;gap:6px;background:var(--blue);color:#fff;padding:.75rem 1.8rem;border-radius:var(--r);font-size:.85rem;font-weight:500}
+.form-head{margin-bottom:1.8rem}
+.form-head h2{color:var(--t1);margin-bottom:.3rem}
+.form-head p{font-size:.82rem;color:var(--t3)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.fg{display:flex;flex-direction:column;gap:.4rem}
+.fg.full{grid-column:1/-1}
+label{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--t3)}
 label .req{color:var(--blue);margin-left:2px}
-
-input,select,textarea{
-  background:var(--bgc);
-  border:1px solid var(--border);
-  border-radius:var(--r);
-  padding:.72rem 1rem;
-  color:var(--t1);
-  font-family:'Inter',sans-serif;
-  font-size:.88rem;font-weight:300;
-  outline:none;
-  transition:border-color var(--tr),background var(--tr);
-  width:100%;
-  appearance:none;-webkit-appearance:none;
-}
+input,select,textarea{background:var(--bgc);border:1px solid var(--border);border-radius:var(--r);padding:.7rem 1rem;color:var(--t1);font-family:'Inter',sans-serif;font-size:.87rem;font-weight:300;outline:none;transition:border-color var(--tr);width:100%;appearance:none;-webkit-appearance:none}
 input::placeholder,textarea::placeholder{color:var(--t3)}
-input:focus,select:focus,textarea:focus{
-  border-color:var(--blue);
-  background:var(--bgch);
-}
-input.error,select.error,textarea.error{
-  border-color:rgba(239,68,68,.5);
-}
+input:focus,select:focus,textarea:focus{border-color:var(--blue)}
 textarea{resize:vertical;min-height:110px;line-height:1.7}
-
-/* Select arrow */
-select{
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%233E4565' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;
-  background-position:right 1rem center;
-  padding-right:2.5rem;
-  cursor:pointer;
-}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%233E4565' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem;cursor:pointer}
 select option{background:var(--bgc);color:var(--t1)}
-
-/* Privacy checkbox */
-.checkbox-row{display:flex;align-items:flex-start;gap:.75rem;margin-top:.5rem}
-.checkbox-row input[type="checkbox"]{
-  width:18px;height:18px;flex-shrink:0;margin-top:.15rem;
-  accent-color:#5B7EFF;cursor:pointer;
-  background:#fff;border:2px solid #5B7EFF;
-  border-radius:3px;padding:0;
-  -webkit-appearance:checkbox;appearance:checkbox;
-}
-.checkbox-row label{
-  font-family:'Inter',sans-serif;font-size:.78rem;
-  letter-spacing:0;text-transform:none;
-  color:var(--t3);line-height:1.6;cursor:pointer;
-}
-.checkbox-row label a{color:var(--blue)}
-
-/* Error messages */
-.field-error{font-size:.72rem;color:#F87171;display:none;margin-top:.1rem}
-.field-error.show{display:block}
-
-/* Submit */
-.submit-row{display:flex;align-items:center;gap:1.2rem;margin-top:1.4rem;flex-wrap:wrap}
-.btn-submit{
-  background:var(--blue);color:#fff;border:none;
-  padding:.85rem 2.2rem;border-radius:var(--r);
-  font-family:'Inter',sans-serif;font-size:.88rem;font-weight:500;
-  letter-spacing:.03em;cursor:pointer;
-  display:inline-flex;align-items:center;gap:8px;
-  transition:all var(--tr);
-  position:relative;overflow:hidden;
-}
-.btn-submit:hover{background:var(--bluelt);transform:translateY(-1px);box-shadow:0 10px 26px rgba(91,126,255,.32)}
-.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none;box-shadow:none}
-.btn-submit .spinner{
-  width:16px;height:16px;
-  border:2px solid rgba(255,255,255,.3);
-  border-top-color:#fff;
-  border-radius:50%;
-  animation:spin .7s linear infinite;
-  display:none;
-}
-.btn-submit.loading .btn-label{display:none}
-.btn-submit.loading .spinner{display:block}
-@keyframes spin{to{transform:rotate(360deg)}}
+.err{font-size:.7rem;color:#F87171;display:none;margin-top:.1rem}
+.err.show{display:block}
+input.bad,select.bad,textarea.bad{border-color:rgba(239,68,68,.5)}
+.cb-row{display:flex;align-items:flex-start;gap:.75rem;margin-top:.3rem}
+.cb-row input[type=checkbox]{width:18px;height:18px;flex-shrink:0;margin-top:.12rem;accent-color:var(--blue);cursor:pointer}
+.cb-row label{font-family:'Inter',sans-serif;font-size:.78rem;letter-spacing:0;text-transform:none;color:var(--t2);line-height:1.6;cursor:pointer}
+.submit-row{display:flex;align-items:center;gap:1.2rem;margin-top:1.3rem;flex-wrap:wrap}
+.btn-submit{background:var(--blue);color:#fff;border:none;padding:.85rem 2.2rem;border-radius:var(--r);font-family:'Inter',sans-serif;font-size:.88rem;font-weight:500;cursor:pointer;transition:all var(--tr)}
+.btn-submit:hover{background:var(--bluelt);transform:translateY(-1px)}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
 .submit-note{font-size:.72rem;color:var(--t3);line-height:1.5}
-
-/* ── FOOTER ── */
-footer{background:var(--bg1);border-top:1px solid var(--border);padding:1.5rem 0}
-.foot-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+footer{background:var(--bg1);border-top:1px solid var(--border);padding:1.4rem 0}
+.foot-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem;max-width:1100px;margin:0 auto;padding:0 clamp(1.5rem,5vw,4rem)}
 .foot-brand{font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;color:var(--t1)}
 .foot-brand em{font-style:normal;color:var(--blue)}
 .foot-copy{font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--t3);letter-spacing:.05em}
-.foot-links{display:flex;gap:1.5rem}
-.foot-links a{font-size:.72rem;color:var(--t3);transition:color var(--tr)}
-.foot-links a:hover{color:var(--t1)}
-
-/* ── RESPONSIVE ── */
-@media(max-width:900px){
-  .page{grid-template-columns:1fr}
-  .left-panel{border-right:none;border-bottom:1px solid var(--border);padding:2.5rem 1.5rem}
-  .right-panel{padding:2.5rem 1.5rem}
-}
-@media(max-width:540px){
-  .form-grid{grid-template-columns:1fr}
-  .form-group.full{grid-column:1}
-  .foot-inner{flex-direction:column;text-align:center}
-}
+@media(max-width:860px){.page{grid-template-columns:1fr}.left{border-right:none;border-bottom:1px solid var(--border)}}
+@media(max-width:520px){.form-grid{grid-template-columns:1fr}.fg.full{grid-column:1}}
 </style>
 </head>
 <body>
-
 <nav>
   <div class="nav-inner">
     <a href="/" class="brand">Stax<em>AI</em></a>
     <a href="/" class="nav-back">← Back to Main Site</a>
   </div>
 </nav>
-
 <div class="page">
-
-  <!-- ── LEFT PANEL ── -->
-  <div class="left-panel">
-    <div class="left-top">
-      <div class="label-tag"><span class="mono">Get in Touch</span></div>
-      <h1>Let's talk about your AI opportunity.</h1>
-      <p class="lead">Whether you need strategic direction, a pilot build, a production AI product, data labeling, or an audit and compliance AI system — start with a focused discussion. No sales pitch, no jargon.</p>
-
-      <div class="info-rows">
-        <div class="info-row">
-          <div class="info-ico">✉</div>
-          <div class="info-body">
-            <div class="info-label">Email</div>
-            <div class="info-val"><a href="/cdn-cgi/l/email-protection#3a53545c557a494e5b425b53145354" style="color:var(--t2)"><span class="__cf_email__" data-cfemail="7f161119103f0c0b1e071e16511611">[email&#160;protected]</span></a></div>
-          </div>
-        </div>
-        <div class="info-row">
-          <div class="info-ico">🌐</div>
-          <div class="info-body">
-            <div class="info-label">Website</div>
-            <div class="info-val"><a href="https://staxai.in">staxai.in</a></div>
-          </div>
-        </div>
-        <div class="info-row">
-          <div class="info-ico">📍</div>
-          <div class="info-body">
-            <div class="info-label">Based in</div>
-            <div class="info-val">Bengaluru, India</div>
-          </div>
-        </div>
-        <div class="info-row">
-          <div class="info-ico">⏱</div>
-          <div class="info-body">
-            <div class="info-label">Response time</div>
-            <div class="info-val">Within 1 business day</div>
-          </div>
-        </div>
+  <div class="left">
+    <div class="badge">Get in Touch</div>
+    <h1>Let's talk about your AI opportunity.</h1>
+    <p class="left-lead">Whether you need strategic direction, a pilot build, a production AI product, data labeling, or an audit and compliance AI system — start with a focused discussion. No sales pitch, no jargon.</p>
+    <div class="info-rows">
+      <div class="info-row">
+        <div class="info-ico">✉</div>
+        <div><div class="info-label">Email</div><div class="info-val"><a href="mailto:info@staxai.in">info@staxai.in</a></div></div>
       </div>
-
-      <div class="expect-title">What happens after you submit</div>
+      <div class="info-row">
+        <div class="info-ico">🌐</div>
+        <div><div class="info-label">Website</div><div class="info-val"><a href="https://staxai.in">staxai.in</a></div></div>
+      </div>
+      <div class="info-row">
+        <div class="info-ico">📍</div>
+        <div><div class="info-label">Based In</div><div class="info-val">Bengaluru, India</div></div>
+      </div>
+      <div class="info-row">
+        <div class="info-ico">⏱</div>
+        <div><div class="info-label">Response Time</div><div class="info-val">Within 1 business day</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="expect-label">What happens after you submit</div>
       <ul class="expect-list">
         <li>We review your enquiry and the area of interest you've selected</li>
         <li>We reach out within one business day to schedule a focused discussion</li>
@@ -299,236 +119,154 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:1.5rem 0
       </ul>
     </div>
   </div>
-
-  <!-- ── RIGHT PANEL / FORM ── -->
-  <div class="right-panel">
-
-    <!-- Success state -->
-    <div class="form-success" id="formSuccess" style="display:none" role="alert" aria-live="polite">
-      <span class="success-ico">✅</span>
+  <div class="right">
+    <div id="successMsg">
+      <div style="font-size:3rem;margin-bottom:1rem">✅</div>
       <h2>Message received.</h2>
       <p>Thank you for reaching out. We will review your enquiry and get back to you within one business day.</p>
-      <a href="/" style="display:inline-flex;align-items:center;gap:6px;background:var(--blue);color:#fff;padding:.75rem 1.8rem;border-radius:var(--r);font-size:.85rem;font-weight:500;transition:all var(--tr)">← Back to StaxAI</a>
+      <a href="/" class="back-btn">← Back to StaxAI</a>
     </div>
-
-    <!-- Form -->
-    <div class="form-wrap" id="formWrap" style="display:block">
-      <div class="form-heading">
+    <div id="formWrap">
+      <div class="form-head">
         <h2>Book a discussion</h2>
         <p>Fill in your details and we'll be in touch within one business day.</p>
       </div>
-
-      <!--
-        NETLIFY FORMS: The 'netlify' and 'data-netlify' attributes below make this
-        form work automatically when hosted on Netlify — no backend needed.
-        Submissions appear in your Netlify dashboard → Forms.
-
-        FORMSPREE FALLBACK: If not using Netlify, replace the action="" with
-        action="https://api.web3forms.com/submit" and remove 
-      -->
-      <form
-        name="staxai-contact"
-        method="POST"
-        
-        
-        action="https://api.web3forms.com/submit"
-        id="contactForm"
-        novalidate
-      >
-        <!-- Web3Forms required fields -->
+      <form id="cf">
         <input type="hidden" name="access_key" value="e694a8aa-3196-45fb-a8e5-220700133993">
         <input type="hidden" name="subject" value="New enquiry from StaxAI website">
         <input type="hidden" name="from_name" value="StaxAI Website">
         <input type="checkbox" name="botcheck" style="display:none">
-
-
         <div class="form-grid">
-
-          <div class="form-group">
-            <label for="firstName">First Name <span class="req">*</span></label>
-            <input type="text" id="firstName" name="first_name" placeholder="Rajesh" autocomplete="given-name" required>
-            <span class="field-error" id="err-firstName">Please enter your first name.</span>
+          <div class="fg">
+            <label>First Name <span class="req">*</span></label>
+            <input type="text" id="f1" name="first_name" placeholder="Rajesh">
+            <span class="err" id="e1">Please enter your first name.</span>
           </div>
-
-          <div class="form-group">
-            <label for="lastName">Last Name <span class="req">*</span></label>
-            <input type="text" id="lastName" name="last_name" placeholder="Kumar" autocomplete="family-name" required>
-            <span class="field-error" id="err-lastName">Please enter your last name.</span>
+          <div class="fg">
+            <label>Last Name <span class="req">*</span></label>
+            <input type="text" id="f2" name="last_name" placeholder="Kumar">
+            <span class="err" id="e2">Please enter your last name.</span>
           </div>
-
-          <div class="form-group">
-            <label for="email">Work Email <span class="req">*</span></label>
-            <input type="email" id="email" name="email" placeholder="rajesh@company.com" autocomplete="email" required>
-            <span class="field-error" id="err-email">Please enter a valid email address.</span>
+          <div class="fg">
+            <label>Work Email <span class="req">*</span></label>
+            <input type="email" id="f3" name="email" placeholder="rajesh@company.com">
+            <span class="err" id="e3">Please enter a valid email address.</span>
           </div>
-
-          <div class="form-group">
-            <label for="phone">Phone / WhatsApp</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" maxlength="15" pattern="[+0-9 \-]{7,15}">
+          <div class="fg">
+            <label>Phone / WhatsApp</label>
+            <input type="tel" id="f4" name="phone" placeholder="+91 98765 43210" maxlength="15">
           </div>
-
-          <div class="form-group">
-            <label for="company">Company / Organisation <span class="req">*</span></label>
-            <input type="text" id="company" name="company" placeholder="Company name" autocomplete="organization" required>
-            <span class="field-error" id="err-company">Please enter your company name.</span>
+          <div class="fg">
+            <label>Company / Organisation <span class="req">*</span></label>
+            <input type="text" id="f5" name="company" placeholder="Company name">
+            <span class="err" id="e5">Please enter your company name.</span>
           </div>
-
-          <div class="form-group">
-            <label for="role">Your Role</label>
-            <input type="text" id="role" name="role" placeholder="CFO, Head of Operations…" autocomplete="organization-title">
+          <div class="fg">
+            <label>Your Role</label>
+            <input type="text" id="f6" name="role" placeholder="CFO, Head of Operations…">
           </div>
-
-          <div class="form-group full">
-            <label for="interest">Area of Interest <span class="req">*</span></label>
-            <select id="interest" name="interest" required>
-              <option value="" disabled selected>Select the service you want to discuss</option>
-              <option value="AI Strategy &amp; Advisory">AI Strategy &amp; Advisory</option>
-              <option value="AI Product Development">AI Product Development</option>
-              <option value="AI Automation &amp; Agents">AI Automation &amp; Agents</option>
-              <option value="Data Labeling &amp; Model Services">Data Labeling &amp; Model Services</option>
-              <option value="AI for Audit, Risk &amp; Compliance">AI for Audit, Risk &amp; Compliance</option>
-              <option value="Industry-Specific AI Solution">Industry-Specific AI Solution</option>
-              <option value="General Enquiry">General Enquiry / Not sure yet</option>
+          <div class="fg full">
+            <label>Area of Interest <span class="req">*</span></label>
+            <select id="f7" name="interest">
+              <option value="">Select the service you want to discuss</option>
+              <option>AI Strategy &amp; Advisory</option>
+              <option>AI Product Development</option>
+              <option>AI Automation &amp; Agents</option>
+              <option>Data Labeling &amp; Model Services</option>
+              <option>AI for Audit, Risk &amp; Compliance</option>
+              <option>Industry-Specific AI Solution</option>
+              <option>General Enquiry / Not sure yet</option>
             </select>
-            <span class="field-error" id="err-interest">Please select an area of interest.</span>
+            <span class="err" id="e7">Please select an area of interest.</span>
           </div>
-
-          <div class="form-group full">
-            <label for="message">Tell us about your situation <span class="req">*</span></label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Briefly describe the business problem you are trying to solve, the workflows involved, and any data or systems context that would be helpful. The more specific you are, the more useful our first conversation will be."
-              required
-            ></textarea>
-            <span class="field-error" id="err-message">Please describe your situation — even a few sentences helps.</span>
+          <div class="fg full">
+            <label>Tell us about your situation <span class="req">*</span></label>
+            <textarea id="f8" name="message" placeholder="Briefly describe the business problem you are trying to solve..."></textarea>
+            <span class="err" id="e8">Please describe your situation — even a few sentences helps.</span>
           </div>
-
-          <div class="form-group full">
-            <div class="checkbox-row">
-              <input type="checkbox" id="consent" name="consent" required>
-              <label for="consent">
-                I agree that StaxAI may contact me regarding this enquiry. Your information will never be shared with third parties.
-                <span class="req">*</span>
-              </label>
+          <div class="fg full">
+            <div class="cb-row">
+              <input type="checkbox" id="f9">
+              <label for="f9">I agree that StaxAI may contact me regarding this enquiry. Your information will never be shared with third parties. <span class="req">*</span></label>
             </div>
-            <span class="field-error" id="err-consent">Please confirm your consent to proceed.</span>
+            <span class="err" id="e9">Please confirm your consent to proceed.</span>
           </div>
-
         </div>
-
         <div class="submit-row">
-          <button type="submit" class="btn-submit" id="submitBtn">
-            <span class="btn-label">Send Message →</span>
-            <div class="spinner"></div>
-          </button>
+          <button type="submit" class="btn-submit" id="sb">Send Message →</button>
           <span class="submit-note">We respond within<br>1 business day</span>
         </div>
-
       </form>
     </div>
-
   </div>
 </div>
-
 <footer>
-  <div class="wrap">
-    <div class="foot-inner">
-      <span class="foot-brand">Stax<em>AI</em></span>
-      <div class="foot-links">
-        <a href="/">Home</a>
-        <a href="/ai-consulting-services-india">AI Consulting</a>
-        <a href="/ai-development-company-india">AI Development</a>
-        <a href="/ai-audit-automation">Audit AI</a>
-      </div>
-      <span class="foot-copy">© 2025 StaxAI · staxai.in</span>
-    </div>
+  <div class="foot-inner">
+    <span class="foot-brand">Stax<em>AI</em></span>
+    <span class="foot-copy">© <span id="yr"></span> StaxAI · staxai.in</span>
   </div>
 </footer>
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-/* ── Handle ?success=true redirect from Netlify ── */
-if (window.location.search.includes('success=true')) {
-  document.getElementById('formSuccess').classList.add('show');
-  document.getElementById('formWrap').classList.add('hide');
-  window.scrollTo(0, 0);
-}
+const rules = [
+  {id:'f1', eid:'e1', fn: v => v.length > 0},
+  {id:'f2', eid:'e2', fn: v => v.length > 0},
+  {id:'f3', eid:'e3', fn: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)},
+  {id:'f5', eid:'e5', fn: v => v.length > 0},
+  {id:'f7', eid:'e7', fn: v => v !== ''},
+  {id:'f8', eid:'e8', fn: v => v.length >= 10},
+  {id:'f9', eid:'e9', fn: (v,el) => el.checked},
+];
 
-/* ── Client-side validation ── */
-const form     = document.getElementById('contactForm');
-const submitBtn= document.getElementById('submitBtn');
-
-const fields = {
-  firstName: { el: document.getElementById('firstName'), err: document.getElementById('err-firstName'), validate: v => v.trim().length >= 1 },
-  lastName:  { el: document.getElementById('lastName'),  err: document.getElementById('err-lastName'),  validate: v => v.trim().length >= 1 },
-  email:     { el: document.getElementById('email'),     err: document.getElementById('err-email'),     validate: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) },
-  company:   { el: document.getElementById('company'),   err: document.getElementById('err-company'),   validate: v => v.trim().length >= 1 },
-  interest:  { el: document.getElementById('interest'),  err: document.getElementById('err-interest'),  validate: v => v !== '' },
-  message:   { el: document.getElementById('message'),   err: document.getElementById('err-message'),   validate: v => v.trim().length >= 10 },
-  phone:     { el: document.getElementById('phone'),     err: document.getElementById('err-phone'),     validate: v => v.trim() === '' || /^[+0-9 \-]{7,15}$/.test(v.trim()) },
-  consent:   { el: document.getElementById('consent'),   err: document.getElementById('err-consent'),   validate: v => document.getElementById('consent').checked },
-};
-
-function validateField(key) {
-  const f = fields[key];
-  const val = f.el.type === 'checkbox' ? f.el.checked : f.el.value;
-  const ok  = f.validate(val);
-  f.el.classList.toggle('error', !ok);
-  f.err.classList.toggle('show', !ok);
-  return ok;
-}
-
-/* Validate on blur */
-Object.keys(fields).forEach(key => {
-  fields[key].el.addEventListener('blur', () => validateField(key));
-  fields[key].el.addEventListener('input', () => {
-    if (fields[key].el.classList.contains('error')) validateField(key);
+function validate() {
+  return rules.every(r => {
+    const el  = document.getElementById(r.id);
+    const err = document.getElementById(r.eid);
+    const val = el.value.trim();
+    const ok  = r.fn(val, el);
+    el.classList.toggle('bad', !ok);
+    err.classList.toggle('show', !ok);
+    return ok;
   });
+}
+
+rules.forEach(r => {
+  const el = document.getElementById(r.id);
+  el.addEventListener('change', validate);
+  el.addEventListener('blur',   validate);
 });
 
-form.addEventListener('submit', function(e) {
+document.getElementById('cf').addEventListener('submit', async function(e) {
   e.preventDefault();
-
-  /* Run all validations */
-  let allValid = true;
-  Object.keys(fields).forEach(key => {
-    if (!validateField(key)) allValid = false;
-  });
-
-  if (!allValid) {
-    /* Scroll to first error */
-    const firstError = form.querySelector('.error');
-    if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  if (!validate()) {
+    const bad = this.querySelector('.bad');
+    if (bad) bad.scrollIntoView({behavior:'smooth', block:'center'});
     return;
   }
+  const btn = document.getElementById('sb');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
 
-  /* Show loading state */
-  submitBtn.classList.add('loading');
-  submitBtn.disabled = true;
-
-  /* Submit via Web3Forms */
-  const data = new FormData(form);
-  fetch('https://api.web3forms.com/submit', {
-    method: 'POST',
-    body: data
-  })
-  .then(async res => {
+  try {
+    const fd = new FormData(this);
+    fd.append('consent_given', 'Yes');
+    const res  = await fetch('https://api.web3forms.com/submit', {method:'POST', body:fd});
     const json = await res.json();
     if (json.success) {
-      document.getElementById('formSuccess').style.cssText = 'display:block !important';
-      document.getElementById('formWrap').style.display = 'none';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.getElementById('formWrap').style.display  = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+      window.scrollTo({top:0, behavior:'smooth'});
     } else {
-      submitBtn.classList.remove('loading');
-      submitBtn.disabled = false;
-      alert('Submission failed. Please email us at info@staxai.in');
+      alert('Could not send. Please email info@staxai.in directly.');
+      btn.disabled = false;
+      btn.textContent = 'Send Message →';
     }
-  })
-  .catch(() => {
-    submitBtn.classList.remove('loading');
-    submitBtn.disabled = false;
-    alert('Something went wrong. Please email us directly at info@staxai.in');
-  });
+  } catch(_) {
+    alert('Network error. Please email info@staxai.in directly.');
+    btn.disabled = false;
+    btn.textContent = 'Send Message →';
+  }
 });
 </script>
 </body>
