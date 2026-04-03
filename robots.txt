@@ -1,0 +1,12 @@
+# robots.txt for staxai.in
+# Generated for StaxAI — AI Consulting & Development Company India
+
+User-agent: *
+Allow: /
+
+# Block access to any admin or private paths (add more as needed)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://staxai.in/sitemap.xml

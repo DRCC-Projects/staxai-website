@@ -1,0 +1,14 @@
+# StaxAI Netlify Redirects
+# Clean URLs — remove .html extension from all pages
+
+/ai-consulting-services-india     /ai-consulting-services-india.html    200
+/ai-development-company-india     /ai-development-company-india.html    200
+/data-labeling-services-india     /data-labeling-services-india.html    200
+/ai-workflow-automation           /ai-workflow-automation.html          200
+/ai-audit-automation              /ai-audit-automation.html             200
+/contact                          /contact.html                         200
+/sitemap.xml                      /sitemap.xml                          200
+/robots.txt                       /robots.txt                           200
+
+# 404 fallback
+/*                                /404.html                             404

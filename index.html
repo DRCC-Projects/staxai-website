@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>StaxAI | AI Consulting &amp; Development Company India</title>
+<meta name="description" content="StaxAI is an AI consulting and development company in India. We deliver AI strategy, full-stack AI products, automation, data labeling, and audit & compliance AI solutions.">
+<meta name="keywords" content="AI consulting services India, AI development company India, data labeling services India, AI automation services, AI for audit and compliance, AI solutions for businesses">
+<meta name="robots" content="index, follow">
+<meta name="author" content="StaxAI">
+<link rel="canonical" href="https://staxai.in/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://staxai.in/">
+<meta property="og:title" content="StaxAI | AI Consulting &amp; Development Company India">
+<meta property="og:description" content="AI consulting, full-stack AI development, automation, data labeling, and audit AI solutions for businesses across India and beyond.">
+<meta property="og:image" content="https://staxai.in/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="StaxAI — AI consulting and development company India">
+<meta property="og:site_name" content="StaxAI">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="StaxAI | AI Consulting &amp; Development Company India">
+<meta name="twitter:description" content="AI consulting, full-stack AI development, automation, data labeling, and audit AI solutions for businesses across India.">
+<meta name="twitter:image" content="https://staxai.in/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://staxai.in/#org","name":"StaxAI","url":"https://staxai.in","description":"AI consulting and development company in India offering strategy, full-stack AI products, automation, data labeling, and audit & compliance AI solutions.","address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","email":"info@staxai.in","contactType":"sales"}},{"@type":"WebSite","url":"https://staxai.in","name":"StaxAI","publisher":{"@id":"https://staxai.in/#org"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What types of companies does StaxAI work with?","acceptedAnswer":{"@type":"Answer","text":"StaxAI works with growing businesses, mid-market organizations, and enterprise teams across industries that want to use AI in practical, commercially relevant ways."}},{"@type":"Question","name":"Does StaxAI only provide consulting or do you build solutions as well?","acceptedAnswer":{"@type":"Answer","text":"StaxAI combines strategic advisory with full-stack execution. We help define the opportunity, design the solution, build the system, and support deployment."}},{"@type":"Question","name":"Can StaxAI support data labeling and model preparation?","acceptedAnswer":{"@type":"Answer","text":"Yes. StaxAI supports data cleaning, structuring, labeling, document tagging, retrieval preparation, prompt engineering, and other model-support workflows."}}]}]}
+</script>
+
+<style>
+/* ═══════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════ */
+:root {
+  --bg:       #070A12;
+  --bg1:      #0C1020;
+  --bgc:      #0F1422;
+  --bgch:     #141929;
+  --bdr:      rgba(91,126,255,0.11);
+  --bdrh:     rgba(91,126,255,0.28);
+  --blue:     #5B7EFF;
+  --bluelt:   #7B9AFF;
+  --bluedim:  rgba(91,126,255,0.10);
+  --cyan:     #22D3EE;
+  --green:    #10B981;
+  --t1:       #EDF0FA;
+  --t2:       #8B93B0;
+  --t3:       #3E4565;
+  --r:        6px;
+  --rlg:      12px;
+  --ease:     cubic-bezier(0.4,0,0.2,1);
+  --tr:       0.26s cubic-bezier(0.4,0,0.2,1);
+}
+
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0 }
+html { scroll-behavior:smooth; font-size:16px }
+body {
+  background:var(--bg); color:var(--t1);
+  font-family:'Inter',sans-serif; font-weight:300;
+  line-height:1.7; overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+a { text-decoration:none; color:inherit }
+img { max-width:100%; height:auto; display:block }
+
+/* ═══════════════════════════════════════
+   TYPOGRAPHY
+═══════════════════════════════════════ */
+h1,h2,h3,h4 { font-family:'Syne',sans-serif; letter-spacing:-0.025em; line-height:1.13 }
+h1 { font-size:clamp(2.4rem,4.8vw,4.2rem); font-weight:700 }
+h2 { font-size:clamp(1.7rem,3vw,2.6rem); font-weight:600 }
+h3 { font-size:clamp(1rem,1.7vw,1.2rem); font-weight:600 }
+h4 { font-size:.92rem; font-weight:500; color:var(--t2) }
+
+.mono { font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.16em; text-transform:uppercase }
+
+/* ═══════════════════════════════════════
+   LAYOUT
+═══════════════════════════════════════ */
+.wrap { max-width:1200px; margin:0 auto; padding:0 clamp(1.5rem,5vw,4.5rem) }
+.section { padding:clamp(4rem,7vw,7.5rem) 0; position:relative }
+.bg1 { background:var(--bg1) }
+
+.label-row { display:inline-flex; align-items:center; gap:8px; color:var(--blue); margin-bottom:1rem }
+.label-row::before { content:''; width:14px; height:1px; background:var(--blue) }
+
+.div { width:100%; height:1px; background:linear-gradient(to right,transparent,var(--bdr),transparent) }
+
+/* reveal */
+.rv { opacity:1; transform:none; transition:opacity .6s var(--ease),transform .6s var(--ease) }
+.rv.in { opacity:1; transform:none }
+.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}
+
+/* ═══════════════════════════════════════
+   BUTTONS
+═══════════════════════════════════════ */
+.btn-p {
+  background:var(--blue); color:#fff; border:none;
+  padding:.82rem 1.9rem; border-radius:var(--r);
+  font-family:'Inter',sans-serif; font-size:.88rem; font-weight:500;
+  letter-spacing:.03em; cursor:pointer;
+  display:inline-flex; align-items:center; gap:7px;
+  transition:all var(--tr);
+}
+.btn-p:hover { background:var(--bluelt); transform:translateY(-2px); box-shadow:0 12px 28px rgba(91,126,255,.32) }
+
+.btn-s {
+  background:transparent; color:var(--t1);
+  border:1px solid var(--bdr);
+  padding:.82rem 1.9rem; border-radius:var(--r);
+  font-family:'Inter',sans-serif; font-size:.88rem; font-weight:300;
+  letter-spacing:.03em; cursor:pointer;
+  display:inline-flex; align-items:center; gap:7px;
+  transition:all var(--tr);
+}
+.btn-s:hover { border-color:var(--blue); color:var(--blue); transform:translateY(-2px) }
+
+/* ═══════════════════════════════════════
+   NAV
+═══════════════════════════════════════ */
+.nav {
+  position:fixed; top:0; left:0; right:0; z-index:200;
+  padding:1.1rem 0; transition:all .32s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.nav.scrolled {
+  background:rgba(7,10,18,.94);
+  backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px);
+  border-bottom-color:var(--bdr); padding:.7rem 0;
+}
+.nav-inner {
+  display:flex; align-items:center; justify-content:space-between;
+  max-width:1200px; margin:0 auto; padding:0 clamp(1.5rem,5vw,4.5rem);
+}
+.brand { font-family:'Syne',sans-serif; font-size:1.42rem; font-weight:700; color:var(--t1); letter-spacing:-.02em }
+.brand em { font-style:normal; color:var(--blue) }
+
+.nav-links { display:flex; align-items:center; gap:2rem; list-style:none }
+
+/* dropdown parent */
+.nav-links li { position:relative }
+.nav-links > li > a {
+  color:var(--t2); font-size:.82rem; font-weight:400;
+  letter-spacing:.04em; transition:color var(--tr); cursor:pointer;
+  display:flex; align-items:center; gap:4px;
+}
+.nav-links > li > a:hover { color:var(--t1) }
+.has-drop > a::after { content:'▾'; font-size:.55rem; color:var(--t3); transition:all var(--tr) }
+.has-drop:hover > a::after { color:var(--blue); transform:rotate(180deg) }
+.nav-btn {
+  background:var(--blue) !important; color:#fff !important;
+  padding:.48rem 1.3rem; border-radius:var(--r);
+  font-size:.82rem !important; font-weight:500 !important; letter-spacing:.02em !important;
+  transition:all var(--tr) !important;
+}
+.nav-btn:hover { background:var(--bluelt) !important; box-shadow:0 8px 22px rgba(91,126,255,.32); transform:translateY(-1px) }
+
+/* dropdown panel */
+.nav-drop {
+  position:absolute; top:100%; left:50%;
+  padding-top:10px; min-width:250px;
+  opacity:0; visibility:hidden; pointer-events:none;
+  transform:translateX(-50%) translateY(-4px);
+  transition:opacity .2s var(--ease),transform .2s var(--ease),visibility .2s;
+  z-index:300;
+}
+.nav-drop-inner {
+  background:rgba(12,16,32,.97);
+  backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px);
+  border:1px solid var(--bdr); border-radius:12px; padding:.55rem;
+  box-shadow:0 24px 50px rgba(0,0,0,.6);
+  position:relative;
+}
+.nav-drop-inner::before {
+  content:''; position:absolute;
+  top:-5px; left:50%; transform:translateX(-50%) rotate(45deg);
+  width:9px; height:9px;
+  background:rgba(12,16,32,.97);
+  border-left:1px solid var(--bdr); border-top:1px solid var(--bdr);
+}
+.has-drop:hover .nav-drop, .has-drop:focus-within .nav-drop {
+  opacity:1; visibility:visible; pointer-events:auto; transform:translateX(-50%) translateY(0);
+}
+.nav-drop a {
+  display:flex; align-items:flex-start; gap:9px; padding:.58rem .8rem;
+  border-radius:8px; color:var(--t2) !important;
+  font-size:.79rem !important; font-weight:300 !important; letter-spacing:.02em !important;
+  transition:all var(--tr); line-height:1.4;
+}
+.nav-drop a:hover { background:var(--bluedim); color:var(--t1) !important }
+.drop-ico { font-size:.85rem; flex-shrink:0; margin-top:.06em; color:var(--blue) }
+.drop-text strong { display:block; color:var(--t1); font-size:.79rem; font-weight:500; margin-bottom:.1rem }
+.drop-text span { font-size:.71rem; color:var(--t3); line-height:1.4 }
+
+.hbg { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px }
+.hbg span { display:block; width:22px; height:1.5px; background:var(--t1); transition:all var(--tr) }
+
+/* mobile menu */
+.mob {
+  display:none; position:fixed; inset:0;
+  background:rgba(7,10,18,.98); z-index:199;
+  flex-direction:column; align-items:center; justify-content:center; gap:1.6rem;
+}
+.mob.open { display:flex }
+.mob a { font-family:'Syne',sans-serif; font-size:1.8rem; font-weight:600; color:var(--t1); transition:color var(--tr) }
+.mob a:hover { color:var(--blue) }
+.mob-x { position:absolute; top:1.5rem; right:2rem; background:none; border:none; color:var(--t2); font-size:1.5rem; cursor:pointer }
+.mob-sub { display:flex; flex-direction:column; align-items:center; gap:.55rem; margin-top:-.6rem }
+.mob-sub a { font-family:'Inter',sans-serif; font-size:.95rem; color:var(--t3) !important; font-weight:300 }
+
+/* ═══════════════════════════════════════
+   HERO
+═══════════════════════════════════════ */
+.hero {
+  min-height:100vh; display:flex; align-items:center;
+  padding:7.5rem 0 5rem; position:relative; overflow:hidden;
+}
+/* grid bg */
+.hero::before {
+  content:''; position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(91,126,255,.045) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(91,126,255,.045) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:radial-gradient(ellipse 90% 90% at 40% 50%,black 20%,transparent 100%);
+  -webkit-mask-image:radial-gradient(ellipse 90% 90% at 40% 50%,black 20%,transparent 100%);
+  pointer-events:none;
+}
+/* blue ambient */
+.hero-glow {
+  position:absolute; width:700px; height:500px;
+  background:radial-gradient(ellipse,rgba(91,126,255,.09) 0%,transparent 70%);
+  top:-10%; left:-5%; pointer-events:none;
+}
+
+.hero-inner {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:clamp(3rem,5vw,5rem); align-items:center;
+  position:relative; z-index:1;
+}
+
+/* badge */
+.hero-badge {
+  display:inline-flex; align-items:center; gap:8px;
+  background:rgba(91,126,255,.06); border:1px solid rgba(91,126,255,.24);
+  border-radius:4px; padding:.3rem .9rem; margin-bottom:1.6rem;
+}
+.hero-badge-dot { width:6px; height:6px; border-radius:50%; background:var(--cyan); animation:blink 2s infinite }
+@keyframes blink { 0%,100%{opacity:1}50%{opacity:.35} }
+.hero-badge span { font-family:'JetBrains Mono',monospace; font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; color:var(--cyan) }
+
+.hero h1 { color:var(--t1); margin-bottom:1.3rem }
+.hero h1 em { font-style:normal; color:var(--blue) }
+
+.hero-lead {
+  font-size:clamp(.93rem,1.6vw,1.06rem); color:var(--t2);
+  max-width:480px; margin-bottom:2rem; font-weight:300; line-height:1.88;
+}
+.hero-btns { display:flex; gap:.85rem; flex-wrap:wrap; margin-bottom:2.8rem }
+
+/* metrics strip */
+.hero-metrics {
+  display:flex; gap:2rem; flex-wrap:wrap;
+  padding-top:1.8rem; border-top:1px solid var(--bdr);
+}
+.hero-metric {}
+.hero-metric-num { font-family:'Syne',sans-serif; font-size:1.8rem; font-weight:700; color:var(--t1); letter-spacing:-.04em; line-height:1 }
+.hero-metric-label { font-size:.72rem; color:var(--t3); margin-top:.25rem; font-family:'JetBrains Mono',monospace; letter-spacing:.06em }
+
+/* ═══════════════════════════════════════
+   HERO VISUAL (product dashboard)
+═══════════════════════════════════════ */
+.dash-wrap {
+  background:var(--bgc); border:1px solid var(--bdr);
+  border-radius:14px; padding:20px; position:relative;
+  animation:dashFloat 7s ease-in-out infinite;
+}
+@keyframes dashFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+
+.dash-chrome {
+  display:flex; align-items:center; gap:6px; margin-bottom:16px;
+}
+.dash-dot { width:8px; height:8px; border-radius:50%; background:var(--t3) }
+.dash-bar {
+  flex:1; background:var(--bg1); border:1px solid var(--bdr);
+  border-radius:4px; height:20px; margin-left:8px;
+  display:flex; align-items:center; padding:0 10px;
+}
+.dash-bar span { font-size:10px; color:var(--t3); font-family:'JetBrains Mono',monospace }
+
+.dash-metrics { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px }
+.dash-card {
+  background:var(--bg1); border:1px solid var(--bdr);
+  border-radius:8px; padding:12px;
+}
+.dash-card-label { font-size:9px; color:var(--t3); font-family:'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.1em; margin-bottom:5px }
+.dash-card-val { font-size:20px; font-weight:600; font-family:'Syne',sans-serif }
+.dash-bar-track { height:2px; background:rgba(91,126,255,.08); border-radius:2px; margin-top:8px }
+.dash-bar-fill { height:2px; border-radius:2px }
+
+.dash-chain {
+  background:var(--bg1); border:1px solid var(--bdr);
+  border-radius:8px; padding:12px; margin-bottom:8px;
+}
+.dash-chain-label { font-size:9px; color:var(--t3); font-family:'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.1em; margin-bottom:9px }
+.chain-nodes { display:flex; align-items:center; gap:5px; flex-wrap:wrap }
+.chain-node {
+  background:rgba(91,126,255,.12); border:1px solid rgba(91,126,255,.25);
+  border-radius:4px; padding:4px 8px; font-size:11px; color:var(--bluelt);
+}
+.chain-node.warn {
+  background:rgba(245,158,11,.1); border-color:rgba(245,158,11,.28); color:#FBBF24;
+}
+.chain-arrow { color:var(--t3); font-size:10px; flex-shrink:0 }
+
+.dash-alerts { display:flex; flex-direction:column; gap:5px }
+.dash-alert {
+  background:var(--bg1); border:1px solid var(--bdr);
+  border-radius:6px; padding:9px 12px;
+  display:flex; align-items:center; justify-content:space-between;
+  transition:border-color var(--tr);
+}
+.dash-alert:hover { border-color:var(--bdr) }
+.alert-left { display:flex; align-items:center; gap:8px }
+.alert-dot { width:5px; height:5px; border-radius:50%; flex-shrink:0 }
+.alert-text { font-size:12px; color:var(--t2); font-weight:300 }
+.alert-amt { font-size:11px; color:var(--t3); font-family:'JetBrains Mono',monospace }
+.dash-caption { margin-top:12px; text-align:center; font-size:10px; color:var(--t3); font-family:'JetBrains Mono',monospace; letter-spacing:.08em }
+
+/* ═══════════════════════════════════════
+   TRUST BAR
+═══════════════════════════════════════ */
+.trust-bar {
+  background:var(--bg1); border-top:1px solid var(--bdr); border-bottom:1px solid var(--bdr);
+  padding:1.1rem 0; overflow:hidden;
+}
+.trust-inner {
+  display:flex; align-items:center; gap:1rem;
+  max-width:1200px; margin:0 auto; padding:0 clamp(1.5rem,5vw,4.5rem);
+  overflow-x:auto; scrollbar-width:none;
+}
+.trust-inner::-webkit-scrollbar { display:none }
+.trust-label { font-size:10px; color:var(--t3); font-family:'JetBrains Mono',monospace; letter-spacing:.12em; text-transform:uppercase; white-space:nowrap; flex-shrink:0 }
+.trust-divider { width:1px; height:14px; background:var(--bdr); flex-shrink:0 }
+.trust-pills { display:flex; gap:6px; flex-shrink:0 }
+.trust-pill {
+  font-size:12px; color:var(--t2); white-space:nowrap;
+  border:1px solid rgba(91,126,255,.18); border-radius:4px;
+  padding:4px 11px; background:var(--bgc);
+  transition:all var(--tr);
+}
+.trust-pill:hover { color:var(--t2); border-color:rgba(91,126,255,.2) }
+
+/* ═══════════════════════════════════════
+   SERVICES
+═══════════════════════════════════════ */
+.svc-section { background:var(--bg1) }
+
+/* 5-card strip at top */
+.svc-strip {
+  display:grid; grid-template-columns:repeat(5,1fr);
+  gap:8px; margin-bottom:2rem;
+}
+.svc-tab {
+  background:var(--bgc); border:1px solid var(--bdr);
+  border-radius:10px; padding:16px; cursor:pointer;
+  transition:all var(--tr); position:relative; overflow:hidden;
+}
+.svc-tab::after {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background:var(--blue); transform:scaleX(0); transform-origin:left;
+  transition:transform var(--tr);
+}
+.svc-tab:hover, .svc-tab.active { border-color:rgba(91,126,255,.26); background:var(--bgch) }
+.svc-tab:hover::after, .svc-tab.active::after { transform:scaleX(1) }
+.svc-tab-ico { font-size:1.1rem; margin-bottom:7px; color:var(--blue) }
+.svc-tab-name { font-family:'Syne',sans-serif; font-size:.88rem; font-weight:600; color:var(--t1); margin-bottom:3px; line-height:1.3 }
+.svc-tab-short { font-size:.7rem; color:var(--t2); line-height:1.5; font-weight:300 }
+
+/* panel */
+.svc-panel { display:none }
+.svc-panel.active { display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:2.5rem }
+.svc-panel-desc { font-size:.9rem; color:var(--t2); line-height:1.9; font-weight:300; margin-bottom:1.2rem }
+.svc-panel-note { font-size:.78rem; color:var(--t3); line-height:1.75; font-weight:300; margin-top:.75rem }
+.svc-panel-cta { display:inline-flex; align-items:center; gap:6px; font-size:.77rem; color:var(--blue); font-weight:400; margin-top:1.1rem; transition:gap var(--tr); cursor:pointer }
+.svc-panel-cta:hover { gap:10px }
+.svc-col-title { font-family:'JetBrains Mono',monospace; font-size:.56rem; letter-spacing:.18em; text-transform:uppercase; color:var(--blue); margin-bottom:.8rem }
+.svc-list { list-style:none; display:flex; flex-direction:column; gap:.4rem }
+.svc-list li { font-size:.8rem; color:var(--t2); font-weight:300; display:flex; align-items:flex-start; gap:7px; line-height:1.55 }
+.svc-list li::before { content:'›'; color:var(--blue); font-size:.78rem; flex-shrink:0; margin-top:.04em }
+
+/* ═══════════════════════════════════════
+   INDUSTRY GRID
+═══════════════════════════════════════ */
+.ind-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:.85rem }
+.ind-card {
+  background:var(--bgc); border:1px solid var(--bdr);
+  border-radius:12px; padding:1.6rem;
+  transition:all var(--tr); position:relative; overflow:hidden; cursor:default;
+}
+.ind-card::before {
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(ellipse 80% 80% at 0% 0%,rgba(91,126,255,.06),transparent 70%);
+  opacity:0; transition:opacity var(--tr);
+}
+.ind-card:hover { border-color:rgba(91,126,255,.24); transform:translateY(-3px); box-shadow:0 16px 40px rgba(0,0,0,.45) }
+.ind-card:hover::before { opacity:1 }
+.ind-ico { font-size:1.2rem; margin-bottom:.75rem; display:block; color:var(--blue) }
+.ind-name { font-family:'Syne',sans-serif; font-size:1rem; font-weight:600; color:var(--t1); margin-bottom:.35rem }
+.ind-ch { font-size:.74rem; color:var(--t2); line-height:1.6; margin-bottom:.9rem; font-style:italic; font-weight:300 }
+.ind-tags { display:flex; flex-wrap:wrap; gap:.3rem }
+.ind-tag { font-family:'JetBrains Mono',monospace; font-size:.58rem; letter-spacing:.05em; color:var(--t2); background:rgba(91,126,255,.08); border:1px solid rgba(91,126,255,.2); padding:.15rem .5rem; border-radius:3px; white-space:nowrap }
+
+/* ═══════════════════════════════════════
+   ACCELERATORS
+═══════════════════════════════════════ */
+.acc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:.95rem }
+.acc-card {
+  background:var(--bgc); border:1px solid var(--bdr); border-top:2px solid transparent;
+  border-radius:12px; padding:1.8rem;
+  transition:all var(--tr); display:flex; flex-direction:column;
+}
+.acc-card:hover { border-top-color:var(--blue); background:var(--bgch); transform:translateY(-4px); box-shadow:0 20px 50px rgba(0,0,0,.5) }
+.acc-badge { display:inline-flex; align-items:center; gap:5px; font-family:'JetBrains Mono',monospace; font-size:.56rem; letter-spacing:.16em; text-transform:uppercase; color:var(--cyan); margin-bottom:.9rem }
+.acc-badge::before { content:''; width:4px; height:4px; border-radius:50%; background:var(--cyan) }
+.acc-vis { height:44px; background:var(--bg1); border:1px solid var(--bdr); border-radius:6px; margin-bottom:1.1rem; display:flex; align-items:center; padding:0 .85rem; gap:.45rem; overflow:hidden }
+.av-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0 }
+.av-line { height:1px; flex:1; opacity:.22 }
+.av-node { width:24px; height:24px; border-radius:4px; border:1px solid var(--bdr); display:flex; align-items:center; justify-content:center; font-size:.62rem; color:var(--t3); background:var(--bgc); flex-shrink:0 }
+.acc-title { font-family:'Syne',sans-serif; font-size:1.1rem; font-weight:600; color:var(--t1); margin-bottom:.4rem }
+.acc-solves { font-family:'JetBrains Mono',monospace; font-size:.58rem; letter-spacing:.05em; color:#7B9AFF; margin-bottom:.8rem; text-transform:uppercase }
+.acc-desc { font-size:.82rem; color:var(--t2); line-height:1.85; font-weight:300; flex:1; margin-bottom:1.2rem }
+.acc-targets { display:flex; flex-wrap:wrap; gap:.3rem; margin-top:auto }
+.acc-target { font-family:'JetBrains Mono',monospace; font-size:.58rem; letter-spacing:.04em; color:var(--t2); background:rgba(91,126,255,.08); border:1px solid rgba(91,126,255,.2); padding:.18rem .55rem; border-radius:3px }
+
+/* ═══════════════════════════════════════
+   ENGAGE
+═══════════════════════════════════════ */
+.eng-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:.85rem }
+.eng-card {
+  background:var(--bgc); border:1px solid var(--bdr);
+  border-radius:12px; padding:1.8rem; transition:all var(--tr);
+}
+.eng-card:hover { border-color:rgba(91,126,255,.22); background:var(--bgch); transform:translateY(-3px) }
+.eng-num { font-family:'Syne',sans-serif; font-size:2.6rem; font-weight:700; color:rgba(91,126,255,.1); line-height:1; margin-bottom:.75rem; display:block }
+.eng-title { font-family:'Syne',sans-serif; font-size:1.05rem; font-weight:600; color:var(--t1); margin-bottom:.5rem }
+.eng-desc { font-size:.78rem; color:var(--t2); line-height:1.8; font-weight:300; margin-bottom:1rem }
+.eng-st { font-family:'JetBrains Mono',monospace; font-size:.54rem; letter-spacing:.18em; text-transform:uppercase; color:var(--blue); margin-bottom:.65rem }
+.eng-list { list-style:none; display:flex; flex-direction:column; gap:.38rem }
+.eng-list li { font-size:.76rem; color:#8B93B0; display:flex; align-items:center; gap:6px; font-weight:300 }
+.eng-list li::before { content:''; width:3px; height:3px; border-radius:50%; background:var(--blue); flex-shrink:0 }
+
+/* ═══════════════════════════════════════
+   FAQ
+═══════════════════════════════════════ */
+.faq-wrap { max-width:820px; margin:0 auto; border:1px solid var(--bdr); border-radius:12px; overflow:hidden }
+.faq-item { border-bottom:1px solid var(--bdr) }
+.faq-item:last-child { border-bottom:none }
+.faq-btn { width:100%; background:none; border:none; padding:1.3rem 1.8rem; display:flex; align-items:center; justify-content:space-between; gap:1.2rem; cursor:pointer; text-align:left; transition:background var(--tr) }
+.faq-btn:hover { background:rgba(91,126,255,.03) }
+.faq-qt { font-family:'Syne',sans-serif; font-size:.97rem; font-weight:500; color:var(--t1); line-height:1.4 }
+.faq-ic { width:24px; height:24px; border-radius:50%; border:1px solid var(--bdr); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--t3); font-size:.85rem; transition:all var(--tr) }
+.faq-item.open .faq-ic { border-color:var(--blue); color:var(--blue); transform:rotate(45deg); background:var(--bluedim) }
+.faq-body { display:none; padding:0 1.8rem 1.3rem }
+.faq-item.open .faq-body { display:block }
+.faq-body p { font-size:.84rem; color:var(--t2); line-height:1.9; font-weight:300 }
+
+/* ═══════════════════════════════════════
+   CTA SECTION
+═══════════════════════════════════════ */
+.cta-sec { position:relative; overflow:hidden }
+.cta-sec::before {
+  content:''; position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 55% 70% at 50% 50%,rgba(91,126,255,.07) 0%,transparent 70%),
+    linear-gradient(rgba(91,126,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(91,126,255,.025) 1px,transparent 1px);
+  background-size:auto,56px 56px,56px 56px;
+  pointer-events:none;
+}
+.cta-inner { position:relative; z-index:1; text-align:center; max-width:720px; margin:0 auto }
+.cta-inner h2 { margin-bottom:1.1rem }
+.cta-inner h2 em { font-style:normal; color:var(--blue) }
+.cta-sub { font-size:.97rem; color:var(--t2); margin-bottom:2.2rem; line-height:1.88; font-weight:300 }
+.cta-btns { display:flex; gap:.85rem; justify-content:center; flex-wrap:wrap; margin-bottom:1.5rem }
+.cta-note { font-size:.76rem; color:var(--t3); font-style:italic }
+.cta-note a { color:var(--blue); transition:color var(--tr) }
+.cta-note a:hover { color:var(--bluelt) }
+
+/* ═══════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════ */
+footer { background:var(--bg1); border-top:1px solid var(--bdr); padding:3rem 0 1.8rem }
+.foot-grid { display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:2.5rem; margin-bottom:2.5rem }
+.foot-brand-name { font-family:'Syne',sans-serif; font-size:1.35rem; font-weight:700; color:var(--t1); margin-bottom:.65rem; letter-spacing:-.02em }
+.foot-brand-name em { font-style:normal; color:var(--blue) }
+.foot-desc { font-size:.77rem; color:#8B93B0; line-height:1.82; font-weight:300; max-width:250px }
+.foot-col-t { font-family:'JetBrains Mono',monospace; font-size:.55rem; letter-spacing:.2em; text-transform:uppercase; color:var(--blue); margin-bottom:1rem }
+.foot-links { list-style:none; display:flex; flex-direction:column; gap:.55rem }
+.foot-links a { font-size:.77rem; color:#8B93B0; transition:color var(--tr) }
+.foot-links a:hover { color:var(--t1) }
+.foot-bot { border-top:1px solid var(--bdr); padding-top:1.3rem; display:flex; align-items:center; justify-content:space-between }
+.foot-copy { font-family:'JetBrains Mono',monospace; font-size:.62rem; color:#5a6080; letter-spacing:.06em }
+
+/* ═══════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════ */
+@media(max-width:1100px){
+  .hero-inner { grid-template-columns:1fr; gap:3.5rem }
+  .dash-wrap { animation:none }
+  .svc-strip { grid-template-columns:1fr 1fr; gap:6px }
+  .svc-panel.active { grid-template-columns:1fr; gap:1.5rem }
+  .ind-grid { grid-template-columns:repeat(2,1fr) }
+  .acc-grid { grid-template-columns:repeat(2,1fr) }
+  .eng-grid { grid-template-columns:repeat(2,1fr) }
+  .foot-grid { grid-template-columns:1fr 1fr; gap:2rem }
+}
+@media(max-width:768px){
+  .nav-links { display:none }
+  .hbg { display:flex }
+  .svc-strip { grid-template-columns:1fr 1fr }
+  .ind-grid { grid-template-columns:1fr 1fr }
+  .acc-grid { grid-template-columns:1fr }
+  .eng-grid { grid-template-columns:1fr }
+  .foot-grid { grid-template-columns:1fr 1fr }
+  .foot-bot { flex-direction:column; gap:.75rem; text-align:center }
+}
+@media(max-width:480px){
+  .svc-strip { grid-template-columns:1fr }
+  .ind-grid { grid-template-columns:1fr }
+  .foot-grid { grid-template-columns:1fr }
+  .hero-btns { flex-direction:column }
+  .hero-btns a { justify-content:center }
+  .cta-btns { flex-direction:column; align-items:center }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" style="position:absolute;left:-9999px" tabindex="0">Skip to content</a>
+
+<!-- ═══════ NAV ═══════ -->
+<header>
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="brand" aria-label="StaxAI Home">Stax<em>AI</em></a>
+
+    <ul class="nav-links" role="list">
+      <li class="has-drop">
+        <a href="#services">Services</a>
+        <div class="nav-drop">
+          <div class="nav-drop-inner">
+            <a href="#services"><span class="drop-ico">◈</span><span class="drop-text"><strong>AI Strategy &amp; Advisory</strong><span>Roadmaps, prioritization &amp; governance</span></span></a>
+            <a href="#services"><span class="drop-ico">⬡</span><span class="drop-text"><strong>AI Product Development</strong><span>Full-stack AI apps, SaaS &amp; internal tools</span></span></a>
+            <a href="#services"><span class="drop-ico">⟳</span><span class="drop-text"><strong>AI Automation &amp; Agents</strong><span>Workflow automation &amp; copilots</span></span></a>
+            <a href="#services"><span class="drop-ico">⊕</span><span class="drop-text"><strong>Data Labeling &amp; Model Services</strong><span>Annotation, RAG setup &amp; dataset prep</span></span></a>
+            <a href="#services"><span class="drop-ico">⊛</span><span class="drop-text"><strong>AI for Audit, Risk &amp; Compliance</strong><span>Evidence mapping &amp; anomaly detection</span></span></a>
+          </div>
+        </div>
+      </li>
+      <li class="has-drop">
+        <a href="#industries">Industries</a>
+        <div class="nav-drop" style="min-width:200px">
+          <div class="nav-drop-inner">
+            <a href="#industries"><span class="drop-ico">⊕</span><span class="drop-text"><strong>Insurance</strong></span></a>
+            <a href="#industries"><span class="drop-ico">⊛</span><span class="drop-text"><strong>Healthcare</strong></span></a>
+            <a href="#industries"><span class="drop-ico">◈</span><span class="drop-text"><strong>Financial Services</strong></span></a>
+            <a href="#industries"><span class="drop-ico">⬡</span><span class="drop-text"><strong>Manufacturing</strong></span></a>
+            <a href="#industries"><span class="drop-ico">◇</span><span class="drop-text"><strong>Retail &amp; Consumer</strong></span></a>
+            <a href="#industries"><span class="drop-ico">⟳</span><span class="drop-text"><strong>Logistics &amp; Supply Chain</strong></span></a>
+            <a href="#industries"><span class="drop-ico">⬙</span><span class="drop-text"><strong>Real Estate &amp; Construction</strong></span></a>
+            <a href="#industries"><span class="drop-ico">⊞</span><span class="drop-text"><strong>Enterprise Functions</strong></span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#accelerators">Accelerators</a></li>
+      <li><a href="#engage">Engage</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="/contact" class="nav-btn">Book a Discussion</a></li>
+    </ul>
+
+    <button class="hbg" id="hbg" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<nav class="mob" id="mob-menu" aria-label="Mobile navigation" aria-hidden="true">
+  <button class="mob-x" id="mob-close" aria-label="Close menu">✕</button>
+  <a href="#services"     onclick="closeMob()">Services</a>
+  <div class="mob-sub">
+    <a href="#services" onclick="closeMob()">AI Strategy &amp; Advisory</a>
+    <a href="#services" onclick="closeMob()">AI Product Development</a>
+    <a href="#services" onclick="closeMob()">AI Automation &amp; Agents</a>
+    <a href="#services" onclick="closeMob()">Data Labeling &amp; Model Services</a>
+    <a href="#services" onclick="closeMob()">AI for Audit, Risk &amp; Compliance</a>
+  </div>
+  <a href="#industries"   onclick="closeMob()">Industries</a>
+  <a href="#accelerators" onclick="closeMob()">Accelerators</a>
+  <a href="#engage"       onclick="closeMob()">Engage</a>
+  <a href="#faq"          onclick="closeMob()">FAQ</a>
+  <a href="/contact" onclick="closeMob()" style="color:var(--blue)">Book a Discussion →</a>
+</nav>
+</header>
+
+<main id="main">
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero" id="top" aria-label="StaxAI — AI consulting and development company India">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+
+      <!-- LEFT -->
+      <div class="rv">
+        <div class="hero-badge">
+          <div class="hero-badge-dot"></div>
+          <span>AI Consulting &amp; Development · India</span>
+        </div>
+        <h1>AI systems built for <em>real business execution.</em></h1>
+        <p class="hero-lead">Strategy, full-stack AI development, automation, data labeling, and audit &amp; compliance AI — from advisory through to deployed system, for businesses across India.</p>
+        <div class="hero-btns">
+          <a href="/contact" class="btn-p" aria-label="Book a discussion with StaxAI">Book a Discussion →</a>
+          <a href="#services" class="btn-s">Explore Services</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="hero-metric">
+            <div class="hero-metric-num">5</div>
+            <div class="hero-metric-label">Core services</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric-num">8+</div>
+            <div class="hero-metric-label">Industries served</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric-num">6</div>
+            <div class="hero-metric-label">Accelerators</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric-num">100%</div>
+            <div class="hero-metric-label">Strategy to deployment</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT — product visual -->
+      <div class="dash-wrap rv d2" role="img" aria-label="StaxAI Audit Evidence Copilot dashboard — showing flagged exceptions, evidence chain mapping and anomaly alerts">
+        <div class="dash-chrome">
+          <div class="dash-dot"></div><div class="dash-dot"></div><div class="dash-dot"></div>
+          <div class="dash-bar"><span>staxai.in / audit-evidence-copilot</span></div>
+        </div>
+        <div class="dash-metrics">
+          <div class="dash-card">
+            <div class="dash-card-label">Exceptions flagged</div>
+            <div class="dash-card-val" style="color:var(--blue)">247</div>
+            <div class="dash-bar-track"><div class="dash-bar-fill" style="width:68%;background:var(--blue)"></div></div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-label">Evidence matched</div>
+            <div class="dash-card-val" style="color:var(--green)">94.2%</div>
+            <div class="dash-bar-track"><div class="dash-bar-fill" style="width:94%;background:var(--green)"></div></div>
+          </div>
+        </div>
+        <div class="dash-chain">
+          <div class="dash-chain-label">Evidence chain — INV-2847</div>
+          <div class="chain-nodes">
+            <div class="chain-node">PO #4821</div>
+            <span class="chain-arrow">→</span>
+            <div class="chain-node">INV-2847</div>
+            <span class="chain-arrow">→</span>
+            <div class="chain-node">GRN-991</div>
+            <span class="chain-arrow">→</span>
+            <div class="chain-node warn">⚠ Payment missing</div>
+          </div>
+        </div>
+        <div class="dash-alerts">
+          <div class="dash-alert">
+            <div class="alert-left"><div class="alert-dot" style="background:#EF4444"></div><span class="alert-text">Duplicate payment — Vendor INF-22</span></div>
+            <span class="alert-amt">₹2,40,000</span>
+          </div>
+          <div class="dash-alert">
+            <div class="alert-left"><div class="alert-dot" style="background:#FBBF24"></div><span class="alert-text">Approval chain incomplete — PO-5512</span></div>
+            <span class="alert-amt">₹87,500</span>
+          </div>
+          <div class="dash-alert">
+            <div class="alert-left"><div class="alert-dot" style="background:var(--green)"></div><span class="alert-text">INV-2901 fully matched &amp; verified</span></div>
+            <span class="alert-amt">₹1,15,000</span>
+          </div>
+        </div>
+        <div class="dash-caption">Audit Evidence Copilot · Solution Accelerator</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar" role="complementary" aria-label="Industry sectors served">
+  <div class="trust-inner">
+    <span class="trust-label">Sectors we serve</span>
+    <div class="trust-divider"></div>
+    <div class="trust-pills">
+      <span class="trust-pill">Insurance</span>
+      <span class="trust-pill">Healthcare</span>
+      <span class="trust-pill">Financial Services</span>
+      <span class="trust-pill">Manufacturing</span>
+      <span class="trust-pill">Logistics</span>
+      <span class="trust-pill">Construction</span>
+      <span class="trust-pill">Retail &amp; Consumer</span>
+      <span class="trust-pill">Enterprise Functions</span>
+    </div>
+  </div>
+</div>
+
+<div class="div"></div>
+
+<!-- ═══════ SERVICES ═══════ -->
+<section class="section svc-section" id="services" aria-labelledby="svc-heading">
+  <div class="wrap">
+    <div style="margin-bottom:2.5rem">
+      <div class="label-row rv"><span class="mono">What We Do</span></div>
+      <h2 class="rv" id="svc-heading">AI Consulting &amp; Development Services</h2>
+      <p class="rv d1" style="font-size:clamp(.88rem,1.5vw,1rem);color:var(--t2);max-width:620px;margin-top:.9rem;font-weight:300;line-height:1.88">
+        As a full-service AI consulting and development company in India, StaxAI combines advisory depth, technical execution, and solution design to help businesses operationalize AI. Select a service to explore.
+      </p>
+    </div>
+
+    <!-- Tab strip -->
+    <div class="svc-strip rv d1" role="tablist" aria-label="Services">
+      <div class="svc-tab active" role="tab" aria-selected="true" aria-controls="sp1" id="st1" tabindex="0" onclick="switchSvc(1)" onkeydown="if(event.key==='Enter')switchSvc(1)">
+        <div class="svc-tab-ico">◈</div>
+        <div class="svc-tab-name">AI Strategy &amp; Advisory</div>
+        <div class="svc-tab-short">Roadmaps, prioritization &amp; governance</div>
+      </div>
+      <div class="svc-tab" role="tab" aria-selected="false" aria-controls="sp2" id="st2" tabindex="0" onclick="switchSvc(2)" onkeydown="if(event.key==='Enter')switchSvc(2)">
+        <div class="svc-tab-ico">⬡</div>
+        <div class="svc-tab-name">AI Product Development</div>
+        <div class="svc-tab-short">Full-stack apps, SaaS &amp; internal tools</div>
+      </div>
+      <div class="svc-tab" role="tab" aria-selected="false" aria-controls="sp3" id="st3" tabindex="0" onclick="switchSvc(3)" onkeydown="if(event.key==='Enter')switchSvc(3)">
+        <div class="svc-tab-ico">⟳</div>
+        <div class="svc-tab-name">AI Automation &amp; Agents</div>
+        <div class="svc-tab-short">Workflow automation &amp; copilots</div>
+      </div>
+      <div class="svc-tab" role="tab" aria-selected="false" aria-controls="sp4" id="st4" tabindex="0" onclick="switchSvc(4)" onkeydown="if(event.key==='Enter')switchSvc(4)">
+        <div class="svc-tab-ico">⊕</div>
+        <div class="svc-tab-name">Data Labeling &amp; Model Services</div>
+        <div class="svc-tab-short">Annotation, RAG &amp; dataset prep</div>
+      </div>
+      <div class="svc-tab" role="tab" aria-selected="false" aria-controls="sp5" id="st5" tabindex="0" onclick="switchSvc(5)" onkeydown="if(event.key==='Enter')switchSvc(5)">
+        <div class="svc-tab-ico">⊛</div>
+        <div class="svc-tab-name">AI for Audit, Risk &amp; Compliance</div>
+        <div class="svc-tab-short">Evidence mapping &amp; anomaly detection</div>
+      </div>
+    </div>
+
+    <!-- Panels -->
+    <div id="sp1" class="svc-panel active rv d2" role="tabpanel" aria-labelledby="st1">
+      <div>
+        <p class="svc-panel-desc">AI adoption often fails not because of technology, but because of unclear priorities, disconnected experimentation, and weak execution planning. Our AI consulting services in India help businesses identify where AI creates meaningful commercial value, prioritize the right opportunities, define structured implementation roadmaps, and align AI initiatives with operational outcomes.</p>
+        <p class="svc-panel-note">We work with leadership teams, CFOs, and internal audit functions to build AI direction that is commercially grounded, practically executable, and governance-ready.</p>
+        <a href="/contact" class="svc-panel-cta">Enquire About This Service →</a>
+      </div>
+      <div>
+        <div class="svc-col-title">Key Service Areas</div>
+        <ul class="svc-list">
+          <li>AI opportunity assessment</li><li>AI use-case prioritization</li>
+          <li>AI roadmap design</li><li>Business process redesign with AI</li>
+          <li>AI governance and risk advisory</li><li>Feasibility and impact analysis</li>
+          <li>Functional transformation workshops</li>
+        </ul>
+      </div>
+      <div>
+        <div class="svc-col-title">Example Use Cases</div>
+        <ul class="svc-list">
+          <li>Identifying automation opportunities in finance operations</li>
+          <li>AI adoption roadmap for mid-sized enterprises</li>
+          <li>Use-case prioritization for internal audit teams</li>
+          <li>Defining AI operating models for growing businesses</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="sp2" class="svc-panel" role="tabpanel" aria-labelledby="st2">
+      <div>
+        <p class="svc-panel-desc">We design and build AI-powered applications tailored to your exact business context. This includes internal business systems, client-facing tools, SaaS products, dashboards, portals, and workflow-driven platforms. We take projects from product definition through architecture, interface design, backend systems, AI integration, deployment, and ongoing refinement.</p>
+        <p class="svc-panel-note">Every product we build is designed for real operational use — not demos. Our development approach is grounded in your business process, data environment, and user workflows.</p>
+        <a href="/contact" class="svc-panel-cta">Enquire About This Service →</a>
+      </div>
+      <div>
+        <div class="svc-col-title">What We Can Build</div>
+        <ul class="svc-list">
+          <li>AI copilots for internal teams</li><li>Business intelligence assistants</li>
+          <li>Document processing systems</li><li>Internal control and audit tools</li>
+          <li>Customer and support workflow tools</li><li>Data-backed decision platforms</li>
+          <li>Vertical SaaS products</li>
+        </ul>
+      </div>
+      <div>
+        <div class="svc-col-title">Example Use Cases</div>
+        <ul class="svc-list">
+          <li>Internal audit evidence tool for finance teams</li>
+          <li>Procurement risk monitoring system</li>
+          <li>Executive MIS portal with AI-driven insights</li>
+          <li>AI-led workflow dashboard for operations</li>
+          <li>MVP SaaS build for niche vertical problems</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="sp3" class="svc-panel" role="tabpanel" aria-labelledby="st3">
+      <div>
+        <p class="svc-panel-desc">We build AI-powered workflow systems that reduce repetitive effort, improve responsiveness, and support more intelligent operations. These include AI agents, team copilots, document automation pipelines, email flows, decision assistants, and multi-step orchestration systems that combine business rules, data sources, and LLM-driven reasoning into cohesive, reliable workflows.</p>
+        <p class="svc-panel-note">From single-step automation to complex multi-agent orchestration — designed to work reliably at scale with the right controls and human-in-the-loop design where it matters.</p>
+        <a href="/contact" class="svc-panel-cta">Enquire About This Service →</a>
+      </div>
+      <div>
+        <div class="svc-col-title">Key Service Areas</div>
+        <ul class="svc-list">
+          <li>End-to-end workflow automation</li><li>AI agents and multi-step systems</li>
+          <li>Team copilots</li><li>Email and response automation</li>
+          <li>Document workflow automation</li><li>Finance and operations automation</li>
+          <li>AI task routing and escalation</li>
+        </ul>
+      </div>
+      <div>
+        <div class="svc-col-title">Example Use Cases</div>
+        <ul class="svc-list">
+          <li>Automated review-response generation</li>
+          <li>Compliance follow-up and reminder workflows</li>
+          <li>Document-to-decision automation pipelines</li>
+          <li>Finance review and monthly reporting support</li>
+          <li>Customer query routing and resolution</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="sp4" class="svc-panel" role="tabpanel" aria-labelledby="st4">
+      <div>
+        <p class="svc-panel-desc">AI systems are only as capable as the data, structure, and retrieval logic behind them. Our data labeling services in India cover the complete data preparation layer required for production-grade AI systems — including cleaning, structuring, labeling, annotation, document tagging, retrieval setup, prompt design, and model support workflows.</p>
+        <p class="svc-panel-note">Many AI projects fail because data is unstructured, documents are inconsistent, or labels are too weak. We solve the foundation layer so your AI systems perform reliably in production.</p>
+        <a href="/contact" class="svc-panel-cta">Enquire About This Service →</a>
+      </div>
+      <div>
+        <div class="svc-col-title">Key Service Areas</div>
+        <ul class="svc-list">
+          <li>Data cleaning and preparation</li><li>Image labeling and text annotation</li>
+          <li>Document tagging and classification</li><li>Custom dataset creation</li>
+          <li>Prompt engineering and RAG setup</li><li>Knowledge-base preparation</li>
+          <li>Fine-tuning support workflows</li>
+        </ul>
+      </div>
+      <div>
+        <div class="svc-col-title">Example Use Cases</div>
+        <ul class="svc-list">
+          <li>Annotated datasets for domain-specific AI models</li>
+          <li>Financial and legal document tagging pipelines</li>
+          <li>Retrieval-ready knowledge repositories</li>
+          <li>Training data preparation for intelligent systems</li>
+          <li>Document classification for enterprise workflows</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="sp5" class="svc-panel" role="tabpanel" aria-labelledby="st5">
+      <div>
+        <p class="svc-panel-desc">We build AI systems for audit, evidence validation, anomaly detection, compliance workflow automation, risk monitoring, and finance-led operational intelligence. A specialized capability combining deep process understanding, structured reasoning, and intelligent workflow design — built for environments where evidence quality, controls, and documentation integrity matter most.</p>
+        <p class="svc-panel-note">Our AI for audit and compliance solutions are designed for real audit environments — not generic risk dashboards. We understand the evidence chain, control framework, and documentation requirements.</p>
+        <a href="/contact" class="svc-panel-cta">Enquire About This Service →</a>
+      </div>
+      <div>
+        <div class="svc-col-title">Key Service Areas</div>
+        <ul class="svc-list">
+          <li>Audit automation and evidence mapping</li><li>Document-to-transaction validation</li>
+          <li>Anomaly and exception detection</li><li>Compliance workflow automation</li>
+          <li>Fraud pattern analytics</li><li>GRC support tooling</li>
+          <li>Finance control intelligence</li>
+        </ul>
+      </div>
+      <div>
+        <div class="svc-col-title">Example Use Cases</div>
+        <ul class="svc-list">
+          <li>Audit evidence copilot for finance teams</li>
+          <li>Vendor payment anomaly detection system</li>
+          <li>Procurement exception monitoring</li>
+          <li>Claims and billing irregularity detection</li>
+          <li>Compliance review and documentation support</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- ═══════ INDUSTRIES ═══════ -->
+<section class="section" id="industries" aria-labelledby="ind-heading">
+  <div class="wrap">
+    <div style="margin-bottom:2.8rem">
+      <div class="label-row rv"><span class="mono">Industry Solutions</span></div>
+      <h2 class="rv" id="ind-heading">Industry-Specific AI Solutions</h2>
+      <p class="rv d1" style="font-size:clamp(.88rem,1.5vw,1rem);color:var(--t2);max-width:620px;margin-top:.9rem;font-weight:300;line-height:1.88">We design AI systems around real industry workflows, operational constraints, and domain-specific data environments — not generic use cases.</p>
+    </div>
+    <div class="ind-grid" role="list">
+      <article class="ind-card rv" role="listitem">
+        <span class="ind-ico">⊕</span><h3 class="ind-name">Insurance</h3>
+        <p class="ind-ch">Improving claims intelligence, fraud visibility, and document-heavy process efficiency.</p>
+        <div class="ind-tags"><span class="ind-tag">Fraud Detection</span><span class="ind-tag">Claims Intelligence</span><span class="ind-tag">Underwriting</span><span class="ind-tag">Exception Monitoring</span></div>
+      </article>
+      <article class="ind-card rv d1" role="listitem">
+        <span class="ind-ico">⊛</span><h3 class="ind-name">Healthcare</h3>
+        <p class="ind-ch">Structuring clinical and billing information for faster, more intelligent decision support.</p>
+        <div class="ind-tags"><span class="ind-tag">Record Summarization</span><span class="ind-tag">Billing Intelligence</span><span class="ind-tag">Claims Validation</span><span class="ind-tag">Compliance</span></div>
+      </article>
+      <article class="ind-card rv d2" role="listitem">
+        <span class="ind-ico">◈</span><h3 class="ind-name">Financial Services</h3>
+        <p class="ind-ch">Enhancing risk visibility, document intelligence, and operational control.</p>
+        <div class="ind-tags"><span class="ind-tag">Anomaly Detection</span><span class="ind-tag">Lending Intelligence</span><span class="ind-tag">Reconciliation</span><span class="ind-tag">Audit Support</span></div>
+      </article>
+      <article class="ind-card rv d3" role="listitem">
+        <span class="ind-ico">⬡</span><h3 class="ind-name">Manufacturing</h3>
+        <p class="ind-ch">Improving operational visibility across procurement, quality, and production reporting.</p>
+        <div class="ind-tags"><span class="ind-tag">Procurement Analytics</span><span class="ind-tag">Quality Incidents</span><span class="ind-tag">Vendor Intelligence</span></div>
+      </article>
+      <article class="ind-card rv" role="listitem">
+        <span class="ind-ico">◇</span><h3 class="ind-name">Retail &amp; Consumer</h3>
+        <p class="ind-ch">Driving faster operational insights across sales, inventory, support, and vendor ecosystems.</p>
+        <div class="ind-tags"><span class="ind-tag">Sales Insight</span><span class="ind-tag">Support Automation</span><span class="ind-tag">Invoice Analytics</span><span class="ind-tag">Inventory</span></div>
+      </article>
+      <article class="ind-card rv d1" role="listitem">
+        <span class="ind-ico">⟳</span><h3 class="ind-name">Logistics &amp; Supply Chain</h3>
+        <p class="ind-ch">Making shipments, validations, and operational workflows more intelligent and exception-aware.</p>
+        <div class="ind-tags"><span class="ind-tag">Shipment Monitoring</span><span class="ind-tag">POD Validation</span><span class="ind-tag">Invoice Matching</span></div>
+      </article>
+      <article class="ind-card rv d2" role="listitem">
+        <span class="ind-ico">⬙</span><h3 class="ind-name">Real Estate &amp; Construction</h3>
+        <p class="ind-ch">Improving visibility across project costs, documentation, contracts, and billing controls.</p>
+        <div class="ind-tags"><span class="ind-tag">Cost Analytics</span><span class="ind-tag">Contract Validation</span><span class="ind-tag">Site Intelligence</span></div>
+      </article>
+      <article class="ind-card rv d3" role="listitem">
+        <span class="ind-ico">⊞</span><h3 class="ind-name">Enterprise Functions</h3>
+        <p class="ind-ch">Embedding AI into finance, HR, procurement, legal, and compliance operations.</p>
+        <div class="ind-tags"><span class="ind-tag">Finance Copilots</span><span class="ind-tag">HR Automation</span><span class="ind-tag">Legal Drafting</span><span class="ind-tag">Compliance</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- ═══════ ACCELERATORS ═══════ -->
+<section class="section bg1" id="accelerators" aria-labelledby="acc-heading">
+  <div class="wrap">
+    <div style="margin-bottom:2.8rem">
+      <div class="label-row rv"><span class="mono">AI Solutions &amp; Accelerators</span></div>
+      <h2 class="rv" id="acc-heading">Configurable Solution Frameworks</h2>
+      <p class="rv d1" style="font-size:clamp(.88rem,1.5vw,1rem);color:var(--t2);max-width:620px;margin-top:.9rem;font-weight:300;line-height:1.88">Pre-designed solution frameworks that can be rapidly configured and deployed based on your business context, existing workflows, and data environment. These are not off-the-shelf products — they are structured starting points we adapt to your precise requirements.</p>
+    </div>
+    <div class="acc-grid" role="list">
+
+      <article class="acc-card rv" role="listitem">
+        <div class="acc-badge">Solution Accelerator</div>
+        <div class="acc-vis"><div class="av-dot" style="background:var(--blue)"></div><div class="av-line" style="background:linear-gradient(to right,var(--blue),transparent)"></div><div class="av-node">📄</div><div class="av-line" style="background:linear-gradient(to right,rgba(91,126,255,.4),transparent)"></div><div class="av-node">⚡</div><div class="av-line" style="background:linear-gradient(to right,rgba(91,126,255,.2),transparent)"></div><div class="av-node">⊕</div></div>
+        <h3 class="acc-title">Audit Evidence Copilot</h3>
+        <div class="acc-solves">Solves → Manual evidence tracing &amp; audit visibility gaps</div>
+        <p class="acc-desc">A configurable AI system designed to connect transactions, documents, and control logic — identifying gaps, exceptions, and audit-relevant issues. Converts scattered, fragmented evidence into structured, review-ready audit intelligence for finance and internal audit functions.</p>
+        <div class="acc-targets"><span class="acc-target">Audit Teams</span><span class="acc-target">Internal Audit</span><span class="acc-target">Finance Review</span><span class="acc-target">Evidence Workflows</span></div>
+      </article>
+
+      <article class="acc-card rv d1" role="listitem">
+        <div class="acc-badge">Solution Accelerator</div>
+        <div class="acc-vis"><div class="av-dot" style="background:#F87171"></div><div class="av-line" style="background:linear-gradient(to right,#F87171,transparent)"></div><div class="av-node">🔍</div><div class="av-line" style="background:linear-gradient(to right,rgba(248,113,113,.4),transparent)"></div><div class="av-node">⚠</div><div class="av-line" style="background:linear-gradient(to right,rgba(248,113,113,.2),transparent)"></div><div class="av-node">◉</div></div>
+        <h3 class="acc-title">Claims Fraud Detection Engine</h3>
+        <div class="acc-solves">Solves → Hidden fraud signals &amp; suspicious claim patterns</div>
+        <p class="acc-desc">A structured AI intelligence layer for insurance workflows that surfaces anomalies, suspicious document patterns, and claim irregularities using configurable rules and AI-based reasoning. Reduces manual review burden while improving fraud detection coverage.</p>
+        <div class="acc-targets"><span class="acc-target">Insurance Claim Teams</span><span class="acc-target">Operations</span><span class="acc-target">Fraud Review</span></div>
+      </article>
+
+      <article class="acc-card rv d2" role="listitem">
+        <div class="acc-badge">Solution Accelerator</div>
+        <div class="acc-vis"><div class="av-dot" style="background:var(--cyan)"></div><div class="av-line" style="background:linear-gradient(to right,var(--cyan),transparent)"></div><div class="av-node">🏥</div><div class="av-line" style="background:linear-gradient(to right,rgba(34,211,238,.4),transparent)"></div><div class="av-node">💊</div><div class="av-line" style="background:linear-gradient(to right,rgba(34,211,238,.2),transparent)"></div><div class="av-node">◈</div></div>
+        <h3 class="acc-title">Healthcare Billing Intelligence</h3>
+        <div class="acc-solves">Solves → Billing irregularities &amp; revenue leakage risks</div>
+        <p class="acc-desc">A solution framework that analyzes billing records, support documents, and claims-linked information to identify anomalies, gaps, and revenue leakage risks. Helps healthcare finance teams improve billing accuracy and strengthen compliance documentation.</p>
+        <div class="acc-targets"><span class="acc-target">Hospitals</span><span class="acc-target">Healthcare Finance</span><span class="acc-target">Billing Review</span><span class="acc-target">Audit</span></div>
+      </article>
+
+      <article class="acc-card rv" role="listitem">
+        <div class="acc-badge">Solution Accelerator</div>
+        <div class="acc-vis"><div class="av-dot" style="background:#A78BFA"></div><div class="av-line" style="background:linear-gradient(to right,#A78BFA,transparent)"></div><div class="av-node">📦</div><div class="av-line" style="background:linear-gradient(to right,rgba(167,139,250,.4),transparent)"></div><div class="av-node">⊛</div><div class="av-line" style="background:linear-gradient(to right,rgba(167,139,250,.2),transparent)"></div><div class="av-node">⚡</div></div>
+        <h3 class="acc-title">Procurement Risk Monitor</h3>
+        <div class="acc-solves">Solves → Duplicate invoices, unusual vendor activity &amp; blind spots</div>
+        <p class="acc-desc">A procurement-focused AI intelligence layer designed to monitor transactions, documentation, and vendor patterns to highlight exceptions and risk indicators across purchasing operations. Helps maintain stronger controls without increasing manual review overhead.</p>
+        <div class="acc-targets"><span class="acc-target">Procurement Teams</span><span class="acc-target">Finance Controllers</span><span class="acc-target">Internal Audit</span></div>
+      </article>
+
+      <article class="acc-card rv d1" role="listitem">
+        <div class="acc-badge">Solution Accelerator</div>
+        <div class="acc-vis"><div class="av-dot" style="background:#34D399"></div><div class="av-line" style="background:linear-gradient(to right,#34D399,transparent)"></div><div class="av-node">🗂</div><div class="av-line" style="background:linear-gradient(to right,rgba(52,211,153,.4),transparent)"></div><div class="av-node">⟳</div><div class="av-line" style="background:linear-gradient(to right,rgba(52,211,153,.2),transparent)"></div><div class="av-node">◇</div></div>
+        <h3 class="acc-title">AI Document Operations Hub</h3>
+        <div class="acc-solves">Solves → Document overload, poor classification &amp; routing delays</div>
+        <p class="acc-desc">A document AI solution that extracts, classifies, tags, summarizes, and routes business documents across functions — reducing manual handling and creating structured data trails. Ideal for operations-heavy environments dealing with high-volume, multi-format document flows.</p>
+        <div class="acc-targets"><span class="acc-target">Operations Teams</span><span class="acc-target">Finance &amp; Support</span><span class="acc-target">Admin Workflows</span></div>
+      </article>
+
+      <article class="acc-card rv d2" role="listitem">
+        <div class="acc-badge">Solution Accelerator</div>
+        <div class="acc-vis"><div class="av-dot" style="background:#FBBF24"></div><div class="av-line" style="background:linear-gradient(to right,#FBBF24,transparent)"></div><div class="av-node">📊</div><div class="av-line" style="background:linear-gradient(to right,rgba(251,191,36,.4),transparent)"></div><div class="av-node">⬡</div><div class="av-line" style="background:linear-gradient(to right,rgba(251,191,36,.2),transparent)"></div><div class="av-node">◈</div></div>
+        <h3 class="acc-title">Executive MIS Copilot</h3>
+        <div class="acc-solves">Solves → Slow reporting cycles &amp; fragmented management intelligence</div>
+        <p class="acc-desc">A management intelligence system that converts raw business data, operational inputs, and business records into structured summaries, trend insights, dashboards, and executive-ready reporting views — designed for founders, CFOs, and business controllers.</p>
+        <div class="acc-targets"><span class="acc-target">Founders &amp; CFOs</span><span class="acc-target">Leadership Teams</span><span class="acc-target">Business Controllers</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- ═══════ ENGAGE ═══════ -->
+<section class="section" id="engage" aria-labelledby="eng-heading">
+  <div class="wrap">
+    <div style="margin-bottom:2.8rem">
+      <div class="label-row rv"><span class="mono">How Clients Engage</span></div>
+      <h2 class="rv" id="eng-heading">Flexible Engagement Models</h2>
+      <p class="rv d1" style="font-size:clamp(.88rem,1.5vw,1rem);color:var(--t2);max-width:620px;margin-top:.9rem;font-weight:300;line-height:1.88">Every AI engagement is different. We offer structured engagement models that match the stage of your AI journey, the complexity of the problem, and the level of execution required.</p>
+    </div>
+    <div class="eng-grid" role="list">
+      <article class="eng-card rv" role="listitem">
+        <span class="eng-num">01</span>
+        <h3 class="eng-title">Advisory Engagements</h3>
+        <p class="eng-desc">For organizations evaluating AI opportunities, building the internal case for AI, and shaping structured implementation plans before committing to full execution.</p>
+        <div class="eng-st">Typical Scope</div>
+        <ul class="eng-list"><li>Opportunity identification</li><li>Use-case prioritization</li><li>Roadmap development</li><li>Transformation planning</li><li>Risk and governance guidance</li></ul>
+      </article>
+      <article class="eng-card rv d1" role="listitem">
+        <span class="eng-num">02</span>
+        <h3 class="eng-title">Build Projects</h3>
+        <p class="eng-desc">For businesses that need a custom AI product, tool, platform, or workflow system designed, engineered, and delivered end-to-end by a capable technical team.</p>
+        <div class="eng-st">Typical Scope</div>
+        <ul class="eng-list"><li>Product architecture</li><li>Interface design</li><li>Backend and AI development</li><li>System integration</li><li>Deployment and iteration</li></ul>
+      </article>
+      <article class="eng-card rv d2" role="listitem">
+        <span class="eng-num">03</span>
+        <h3 class="eng-title">Managed Enablement</h3>
+        <p class="eng-desc">For teams that need ongoing support across automation, data workflows, prompt systems, AI operations, and continuous improvement of deployed AI systems.</p>
+        <div class="eng-st">Typical Scope</div>
+        <ul class="eng-list"><li>Continuous system support</li><li>Workflow refinement</li><li>AI operations enablement</li><li>Data and prompt maintenance</li><li>Performance improvement cycles</li></ul>
+      </article>
+      <article class="eng-card rv d3" role="listitem">
+        <span class="eng-num">04</span>
+        <h3 class="eng-title">Pilot / Prototype</h3>
+        <p class="eng-desc">For businesses that want to validate one high-potential AI use case with a working system before committing to a broader AI deployment or transformation program.</p>
+        <div class="eng-st">Typical Scope</div>
+        <ul class="eng-list"><li>Focused problem definition</li><li>Rapid prototype build</li><li>Limited-scope pilot run</li><li>Outcome validation</li><li>Scale and expansion recommendation</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- ═══════ FAQ ═══════ -->
+<section class="section bg1" id="faq" aria-labelledby="faq-heading">
+  <div class="wrap">
+    <div style="margin-bottom:2.8rem;text-align:center">
+      <div class="label-row rv" style="justify-content:center"><span class="mono">Frequently Asked Questions</span></div>
+      <h2 class="rv" id="faq-heading">Common Questions About StaxAI</h2>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item rv" id="f1">
+        <button class="faq-btn" onclick="toggleFaq('f1')" aria-expanded="false" aria-controls="f1b"><span class="faq-qt">What types of companies does StaxAI work with?</span><span class="faq-ic">+</span></button>
+        <div class="faq-body" id="f1b" role="region"><p>We work with growing businesses, mid-market organizations, and enterprise teams across industries that want to use AI in practical, commercially grounded ways — including insurance, healthcare, financial services, manufacturing, logistics, construction, retail, and enterprise internal functions.</p></div>
+      </div>
+      <div class="faq-item rv d1" id="f2">
+        <button class="faq-btn" onclick="toggleFaq('f2')" aria-expanded="false" aria-controls="f2b"><span class="faq-qt">Do you only provide consulting, or do you build AI solutions as well?</span><span class="faq-ic">+</span></button>
+        <div class="faq-body" id="f2b" role="region"><p>We combine strategic advisory with full-stack technical execution. We help define the opportunity, design the solution architecture, build the AI system, and support deployment and ongoing operations — covering the complete journey from initial AI strategy through to a live, working AI product or workflow.</p></div>
+      </div>
+      <div class="faq-item rv d2" id="f3">
+        <button class="faq-btn" onclick="toggleFaq('f3')" aria-expanded="false" aria-controls="f3b"><span class="faq-qt">Can StaxAI support data labeling and model preparation work?</span><span class="faq-ic">+</span></button>
+        <div class="faq-body" id="f3b" role="region"><p>Yes. Our data labeling services in India cover data cleaning, structuring, image and text labeling, document tagging, retrieval preparation, prompt engineering, and other model-support workflows required for reliable, production-grade AI systems.</p></div>
+      </div>
+      <div class="faq-item rv d3" id="f4">
+        <button class="faq-btn" onclick="toggleFaq('f4')" aria-expanded="false" aria-controls="f4b"><span class="faq-qt">Do you build internal AI tools and SaaS AI products?</span><span class="faq-ic">+</span></button>
+        <div class="faq-body" id="f4b" role="region"><p>Yes. We build both internal business AI systems — such as operational dashboards, audit tools, workflow copilots, and management intelligence platforms — and external-facing AI-powered SaaS products designed for client use or commercial distribution.</p></div>
+      </div>
+      <div class="faq-item rv" id="f5">
+        <button class="faq-btn" onclick="toggleFaq('f5')" aria-expanded="false" aria-controls="f5b"><span class="faq-qt">Can you create industry-specific AI solutions?</span><span class="faq-ic">+</span></button>
+        <div class="faq-body" id="f5b" role="region"><p>Yes. Our entire approach is built around designing AI systems for real industry workflows — not adapting generic solutions. We bring particular depth in insurance, healthcare, financial services, manufacturing, logistics, construction, and enterprise support functions.</p></div>
+      </div>
+      <div class="faq-item rv d1" id="f6">
+        <button class="faq-btn" onclick="toggleFaq('f6')" aria-expanded="false" aria-controls="f6b"><span class="faq-qt">How do AI projects with StaxAI usually begin?</span><span class="faq-ic">+</span></button>
+        <div class="faq-body" id="f6b" role="region"><p>Most engagements begin with a focused discussion to understand the business problem, current workflow, available data, and desired outcome. From there, we typically define an advisory scope, a pilot build, or a full development roadmap.</p></div>
+      </div>
+      <div class="faq-item rv d2" id="f7">
+        <button class="faq-btn" onclick="toggleFaq('f7')" aria-expanded="false" aria-controls="f7b"><span class="faq-qt">Does StaxAI sell off-the-shelf AI tools?</span><span class="faq-ic">+</span></button>
+        <div class="faq-body" id="f7b" role="region"><p>Our focus is not generic off-the-shelf tooling. We use configurable solution frameworks and accelerators as starting points, but every system we deliver is tailored to your specific business environment, workflows, data infrastructure, and requirements.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- ═══════ CTA ═══════ -->
+<section class="section cta-sec" id="contact" aria-labelledby="cta-heading">
+  <div class="wrap">
+    <div class="cta-inner">
+      <div class="label-row rv" style="justify-content:center"><span class="mono">Get in Touch</span></div>
+      <h2 class="rv" id="cta-heading">Let's build <em>intelligence</em> into your business.</h2>
+      <p class="cta-sub rv d1">Whether you need strategic AI direction, a production-ready AI product, workflow automation, data labeling, or an audit and compliance AI system — StaxAI can help define and deliver the right path for your business.</p>
+      <div class="cta-btns rv d2">
+        <a href="/contact" class="btn-p" aria-label="Book a discussion with StaxAI">Book a Discussion →</a>
+        <a href="/cdn-cgi/l/email-protection#b5ddd0d9d9daf5c6c1d4cdd4dc9bdcdb" class="btn-s" aria-label="Email StaxAI directly">Email Us Directly</a>
+      </div>
+      <p class="cta-note rv d3">Or reach us at <a href="/cdn-cgi/l/email-protection#e68e838a8a89a69592879e878fc88f88"><span class="__cf_email__" data-cfemail="f39b969f9f9cb38087928b929add9a9d">[email&#160;protected]</span></a> &nbsp;·&nbsp; staxai.in &nbsp;·&nbsp; Based in Bengaluru, India</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand-name">Stax<em>AI</em></div>
+        <p class="foot-desc">AI consulting, intelligent system development, data labeling services, automation, and industry-specific AI solution design for businesses across India and beyond.</p>
+      </div>
+      <nav aria-label="Services footer navigation">
+        <div class="foot-col-t">Services</div>
+        <ul class="foot-links">
+          <li><a href="/ai-consulting-services-india">AI Strategy &amp; Advisory</a></li>
+          <li><a href="/ai-development-company-india">AI Product Development</a></li>
+          <li><a href="/ai-workflow-automation">AI Automation &amp; Agents</a></li>
+          <li><a href="/data-labeling-services-india">Data Labeling &amp; Model Services</a></li>
+          <li><a href="/ai-audit-automation">Audit, Risk &amp; Compliance AI</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Solutions footer navigation">
+        <div class="foot-col-t">Solutions</div>
+        <ul class="foot-links">
+          <li><a href="#industries">Industry Solutions</a></li>
+          <li><a href="#accelerators">AI Accelerators</a></li>
+          <li><a href="#engage">Advisory Engagements</a></li>
+          <li><a href="#engage">Build Projects</a></li>
+          <li><a href="#engage">Pilot &amp; Prototype</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Contact footer navigation">
+        <div class="foot-col-t">Contact</div>
+        <ul class="foot-links">
+          <li><a href="/cdn-cgi/l/email-protection#ee868b828281ae9d9a8f968f87c08780"><span class="__cf_email__" data-cfemail="e8808d848487a89b9c89908981c68186">[email&#160;protected]</span></a></li>
+          <li><a href="https://staxai.in">staxai.in</a></li>
+          <li><a href="/contact">Book a Discussion</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="foot-bot">
+      <span class="foot-copy">© 2025 StaxAI. All rights reserved.</span>
+      <span class="foot-copy" style="color:var(--t3);font-size:.58rem">AI CONSULTING · DEVELOPMENT · DATA LABELING · AUTOMATION · INDIA</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════ JAVASCRIPT ═══════ -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* Nav scroll */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', scrollY > 40);
+}, { passive:true });
+
+/* Mobile menu */
+const hbg = document.getElementById('hbg');
+const mob = document.getElementById('mob-menu');
+hbg.addEventListener('click', () => {
+  mob.classList.add('open');
+  hbg.setAttribute('aria-expanded','true');
+  mob.setAttribute('aria-hidden','false');
+});
+document.getElementById('mob-close').addEventListener('click', closeMob);
+function closeMob() {
+  mob.classList.remove('open');
+  hbg.setAttribute('aria-expanded','false');
+  mob.setAttribute('aria-hidden','true');
+}
+
+/* Services tab switcher */
+function switchSvc(n) {
+  document.querySelectorAll('.svc-tab').forEach((t,i) => {
+    const active = i+1 === n;
+    t.classList.toggle('active', active);
+    t.setAttribute('aria-selected', active);
+  });
+  document.querySelectorAll('.svc-panel').forEach((p,i) => {
+    p.classList.toggle('active', i+1 === n);
+  });
+}
+
+/* FAQ accordion */
+function toggleFaq(id) {
+  const el  = document.getElementById(id);
+  const btn = el.querySelector('.faq-btn');
+  const was = el.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-btn').setAttribute('aria-expanded','false');
+  });
+  if (!was) { el.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+}
+
+/* Scroll reveal — JS applies opacity via inline style so CSS default (opacity:1) is the fallback */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'none';
+      e.target.classList.add('in');
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold:0.07, rootMargin:'0px 0px -24px 0px' });
+
+/* Set initial hidden state via JS (not CSS) so content shows if JS fails */
+document.querySelectorAll('.rv').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  obs.observe(el);
+});
+
+/* Immediate fallback for elements already in viewport */
+setTimeout(() => {
+  document.querySelectorAll('.rv:not(.in)').forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight) {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      el.classList.add('in');
+    }
+  });
+}, 100);
+</script>
+
+</body>
+</html>
