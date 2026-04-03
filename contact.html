@@ -112,11 +112,11 @@ nav{
 
 /* Success state */
 .form-success{
-  display:none;
+  display:none !important;
   text-align:center;
   padding:3rem 2rem;
 }
-.form-success.show{display:block}
+.form-success.show{display:block !important}
 .success-ico{font-size:3rem;margin-bottom:1.2rem;display:block}
 .form-success h2{color:var(--t1);margin-bottom:.8rem}
 .form-success p{font-size:.9rem;color:var(--t2);max-width:380px;margin:0 auto 1.8rem}
@@ -363,7 +363,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:1.5rem 0
 
           <div class="form-group">
             <label for="phone">Phone / WhatsApp</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel">
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" maxlength="15" pattern="[+0-9 \-]{7,15}">
           </div>
 
           <div class="form-group">
@@ -464,6 +464,7 @@ const fields = {
   company:   { el: document.getElementById('company'),   err: document.getElementById('err-company'),   validate: v => v.trim().length >= 1 },
   interest:  { el: document.getElementById('interest'),  err: document.getElementById('err-interest'),  validate: v => v !== '' },
   message:   { el: document.getElementById('message'),   err: document.getElementById('err-message'),   validate: v => v.trim().length >= 10 },
+  phone:     { el: document.getElementById('phone'),     err: document.getElementById('err-phone'),     validate: v => v.trim() === '' || /^[+0-9 \-]{7,15}$/.test(v.trim()) },
   consent:   { el: document.getElementById('consent'),   err: document.getElementById('err-consent'),   validate: v => document.getElementById('consent').checked },
 };
 
@@ -504,12 +505,30 @@ form.addEventListener('submit', function(e) {
   submitBtn.classList.add('loading');
   submitBtn.disabled = true;
 
-  /* Submit via fetch for Netlify Forms */
+  /* Submit via Web3Forms */
   const data = new FormData(form);
-  fetch('/', {
+  fetch('https://api.web3forms.com/submit', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams(data).toString(),
+    body: data
   })
-  .then(res => {
-    if (res.
+  .then(async res => {
+    const json = await res.json();
+    if (json.success) {
+      document.getElementById('formSuccess').style.display = 'block';
+      document.getElementById('formWrap').style.display = 'none';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      submitBtn.classList.remove('loading');
+      submitBtn.disabled = false;
+      alert('Submission failed. Please email us at info@staxai.in');
+    }
+  })
+  .catch(() => {
+    submitBtn.classList.remove('loading');
+    submitBtn.disabled = false;
+    alert('Something went wrong. Please email us directly at info@staxai.in');
+  });
+});
+</script>
+</body>
+</html>
