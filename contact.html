@@ -263,7 +263,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:1.5rem 0
           <div class="info-ico">✉</div>
           <div class="info-body">
             <div class="info-label">Email</div>
-            <div class="info-val"><a href="mailto:info@staxai.in" style="color:var(--t2)">info@staxai.in</a></div>
+            <div class="info-val"><a href="/cdn-cgi/l/email-protection#3a53545c557a494e5b425b53145354" style="color:var(--t2)"><span class="__cf_email__" data-cfemail="7f161119103f0c0b1e071e16511611">[email&#160;protected]</span></a></div>
           </div>
         </div>
         <div class="info-row">
@@ -323,23 +323,23 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:1.5rem 0
         Submissions appear in your Netlify dashboard → Forms.
 
         FORMSPREE FALLBACK: If not using Netlify, replace the action="" with
-        action="https://formspree.io/f/YOUR_FORM_ID" and remove 
+        action="https://api.web3forms.com/submit" and remove 
       -->
       <form
         name="staxai-contact"
         method="POST"
         
         
-        action="https://formspree.io/f/YOUR_FORM_ID"
+        action="https://api.web3forms.com/submit"
         id="contactForm"
         novalidate
       >
-        <!-- Netlify honeypot field — hidden from real users, catches bots -->
-        <p style="display:none">
-          <label>Don't fill this out: <input name="bot-field"></label>
-        </p>
-        <!-- Netlify hidden field -->
-        
+        <!-- Web3Forms required fields -->
+        <input type="hidden" name="access_key" value="e694a8aa-3196-45fb-a8e5-220700133993">
+        <input type="hidden" name="subject" value="New enquiry from StaxAI website">
+        <input type="hidden" name="from_name" value="StaxAI Website">
+        <input type="checkbox" name="botcheck" style="display:none">
+
 
         <div class="form-grid">
 
@@ -445,7 +445,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:1.5rem 0
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* ── Handle ?success=true redirect from Netlify ── */
 if (window.location.search.includes('success=true')) {
   document.getElementById('formSuccess').classList.add('show');
@@ -512,10 +512,4 @@ form.addEventListener('submit', function(e) {
     body: new URLSearchParams(data).toString(),
   })
   .then(res => {
-    if (res.ok) {
-      /* Show success */
-      document.getElementById('formSuccess').classList.add('show');
-      document.getElementById('formWrap').classList.add('hide');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
- 
+    if (res.
