@@ -1210,4 +1210,50 @@ function switchSvc(n) {
 function toggleFaq(id) {
   const el  = document.getElementById(id);
   const btn = el.querySelector('.faq-btn');
-  const was = el.classList.con
+  const was = el.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-btn').setAttribute('aria-expanded','false');
+  });
+  if (!was) {
+    el.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+  }
+}
+
+/* Scroll reveal */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity  = '1';
+      e.target.style.transform = 'none';
+      e.target.classList.add('in');
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold:0.07, rootMargin:'0px 0px -24px 0px' });
+
+document.querySelectorAll('.rv').forEach(el => {
+  el.style.opacity   = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  obs.observe(el);
+});
+
+setTimeout(() => {
+  document.querySelectorAll('.rv:not(.in)').forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight) {
+      el.style.opacity  = '1';
+      el.style.transform = 'none';
+      el.classList.add('in');
+    }
+  });
+}, 100);
+
+/* Dynamic year */
+const yrEl = document.getElementById('yr');
+if (yrEl) yrEl.textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
